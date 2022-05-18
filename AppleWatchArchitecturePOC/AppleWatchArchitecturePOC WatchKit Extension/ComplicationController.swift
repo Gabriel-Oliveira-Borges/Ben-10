@@ -1,8 +1,8 @@
 //
 //  ComplicationController.swift
-//  testeswiftui WatchKit Extension
+//  AppleWatchArchitecturePOC WatchKit Extension
 //
-//  Created by Karen Lima on 16/05/22.
+//  Created by Gabriel Oliveira Borges on 16/05/22.
 //
 
 import ClockKit
@@ -14,7 +14,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
         let descriptors = [
-            CLKComplicationDescriptor(identifier: "complication", displayName: "testeswiftui", supportedFamilies: CLKComplicationFamily.allCases)
+            CLKComplicationDescriptor(identifier: "complication", displayName: "AppleWatchArchitecturePOC", supportedFamilies: CLKComplicationFamily.allCases)
             // Multiple complication support can be added here with more descriptors
         ]
         

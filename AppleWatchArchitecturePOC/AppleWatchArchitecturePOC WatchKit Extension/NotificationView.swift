@@ -1,8 +1,8 @@
 //
 //  NotificationView.swift
-//  testeswiftui WatchKit Extension
+//  AppleWatchArchitecturePOC WatchKit Extension
 //
-//  Created by Karen Lima on 16/05/22.
+//  Created by Gabriel Oliveira Borges on 16/05/22.
 //
 
 import SwiftUI
