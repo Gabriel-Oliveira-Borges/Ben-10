@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8140A59283279B4006ABBFF /* testeswiftui WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8140A58283279B4006ABBFF /* testeswiftui WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8140A5E283279B6006ABBFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8140A5D283279B6006ABBFF /* Assets.xcassets */; };
+		E8140A64283279B6006ABBFF /* testeswiftui WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8140A63283279B6006ABBFF /* testeswiftui WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8140A69283279B6006ABBFF /* testeswiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8140A68283279B6006ABBFF /* testeswiftuiApp.swift */; };
+		E8140A6B283279B6006ABBFF /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8140A6A283279B6006ABBFF /* ActionView.swift */; };
+		E8140A6D283279B6006ABBFF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8140A6C283279B6006ABBFF /* NotificationController.swift */; };
+		E8140A6F283279B6006ABBFF /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8140A6E283279B6006ABBFF /* NotificationView.swift */; };
+		E8140A71283279B6006ABBFF /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8140A70283279B6006ABBFF /* ComplicationController.swift */; };
+		E8140A73283279B7006ABBFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8140A72283279B7006ABBFF /* Assets.xcassets */; };
+		E8140A76283279B7006ABBFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8140A75283279B7006ABBFF /* Preview Assets.xcassets */; };
+		E8B1E5AF2833E9E500E8164C /* MyActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B1E5AE2833E9E500E8164C /* MyActions.swift */; };
+		E8B1E5B12833EA0E00E8164C /* ActionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B1E5B02833EA0E00E8164C /* ActionModels.swift */; };
+		E8B1E5B32833EB6800E8164C /* ActionPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B1E5B22833EB6800E8164C /* ActionPageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8140A5A283279B4006ABBFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8140A4E283279B4006ABBFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8140A57283279B4006ABBFF;
+			remoteInfo = "testeswiftui WatchKit App";
+		};
+		E8140A65283279B6006ABBFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8140A4E283279B4006ABBFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8140A62283279B6006ABBFF;
+			remoteInfo = "testeswiftui WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8140A7E283279B7006ABBFF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E8140A64283279B6006ABBFF /* testeswiftui WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8140A82283279B7006ABBFF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E8140A59283279B4006ABBFF /* testeswiftui WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E8140A54283279B4006ABBFF /* testeswiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testeswiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8140A58283279B4006ABBFF /* testeswiftui WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "testeswiftui WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8140A5D283279B6006ABBFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8140A63283279B6006ABBFF /* testeswiftui WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "testeswiftui WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8140A68283279B6006ABBFF /* testeswiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testeswiftuiApp.swift; sourceTree = "<group>"; };
+		E8140A6A283279B6006ABBFF /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		E8140A6C283279B6006ABBFF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E8140A6E283279B6006ABBFF /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		E8140A70283279B6006ABBFF /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		E8140A72283279B7006ABBFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8140A75283279B7006ABBFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8140A77283279B7006ABBFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8140A78283279B7006ABBFF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E8B1E5AE2833E9E500E8164C /* MyActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActions.swift; sourceTree = "<group>"; };
+		E8B1E5B02833EA0E00E8164C /* ActionModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionModels.swift; sourceTree = "<group>"; };
+		E8B1E5B22833EB6800E8164C /* ActionPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionPageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8140A60283279B6006ABBFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8140A4D283279B4006ABBFF = {
+			isa = PBXGroup;
+			children = (
+				E8140A5C283279B4006ABBFF /* testeswiftui WatchKit App */,
+				E8140A67283279B6006ABBFF /* testeswiftui WatchKit Extension */,
+				E8140A55283279B4006ABBFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8140A55283279B4006ABBFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8140A54283279B4006ABBFF /* testeswiftui.app */,
+				E8140A58283279B4006ABBFF /* testeswiftui WatchKit App.app */,
+				E8140A63283279B6006ABBFF /* testeswiftui WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8140A5C283279B4006ABBFF /* testeswiftui WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E8140A5D283279B6006ABBFF /* Assets.xcassets */,
+			);
+			path = "testeswiftui WatchKit App";
+			sourceTree = "<group>";
+		};
+		E8140A67283279B6006ABBFF /* testeswiftui WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E8140A68283279B6006ABBFF /* testeswiftuiApp.swift */,
+				E8140A6A283279B6006ABBFF /* ActionView.swift */,
+				E8B1E5B22833EB6800E8164C /* ActionPageView.swift */,
+				E8B1E5B02833EA0E00E8164C /* ActionModels.swift */,
+				E8B1E5AE2833E9E500E8164C /* MyActions.swift */,
+				E8140A6C283279B6006ABBFF /* NotificationController.swift */,
+				E8140A6E283279B6006ABBFF /* NotificationView.swift */,
+				E8140A70283279B6006ABBFF /* ComplicationController.swift */,
+				E8140A72283279B7006ABBFF /* Assets.xcassets */,
+				E8140A77283279B7006ABBFF /* Info.plist */,
+				E8140A78283279B7006ABBFF /* PushNotificationPayload.apns */,
+				E8140A74283279B7006ABBFF /* Preview Content */,
+			);
+			path = "testeswiftui WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E8140A74283279B7006ABBFF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E8140A75283279B7006ABBFF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8140A53283279B4006ABBFF /* testeswiftui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8140A83283279B7006ABBFF /* Build configuration list for PBXNativeTarget "testeswiftui" */;
+			buildPhases = (
+				E8140A52283279B4006ABBFF /* Resources */,
+				E8140A82283279B7006ABBFF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8140A5B283279B4006ABBFF /* PBXTargetDependency */,
+			);
+			name = testeswiftui;
+			productName = testeswiftui;
+			productReference = E8140A54283279B4006ABBFF /* testeswiftui.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		E8140A57283279B4006ABBFF /* testeswiftui WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8140A7F283279B7006ABBFF /* Build configuration list for PBXNativeTarget "testeswiftui WatchKit App" */;
+			buildPhases = (
+				E8140A56283279B4006ABBFF /* Resources */,
+				E8140A7E283279B7006ABBFF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8140A66283279B6006ABBFF /* PBXTargetDependency */,
+			);
+			name = "testeswiftui WatchKit App";
+			productName = "testeswiftui WatchKit App";
+			productReference = E8140A58283279B4006ABBFF /* testeswiftui WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E8140A62283279B6006ABBFF /* testeswiftui WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8140A7B283279B7006ABBFF /* Build configuration list for PBXNativeTarget "testeswiftui WatchKit Extension" */;
+			buildPhases = (
+				E8140A5F283279B6006ABBFF /* Sources */,
+				E8140A60283279B6006ABBFF /* Frameworks */,
+				E8140A61283279B6006ABBFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "testeswiftui WatchKit Extension";
+			productName = "testeswiftui WatchKit Extension";
+			productReference = E8140A63283279B6006ABBFF /* testeswiftui WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8140A4E283279B4006ABBFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					E8140A53283279B4006ABBFF = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					E8140A57283279B4006ABBFF = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					E8140A62283279B6006ABBFF = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E8140A51283279B4006ABBFF /* Build configuration list for PBXProject "testeswiftui" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8140A4D283279B4006ABBFF;
+			productRefGroup = E8140A55283279B4006ABBFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8140A53283279B4006ABBFF /* testeswiftui */,
+				E8140A57283279B4006ABBFF /* testeswiftui WatchKit App */,
+				E8140A62283279B6006ABBFF /* testeswiftui WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8140A52283279B4006ABBFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8140A56283279B4006ABBFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8140A5E283279B6006ABBFF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8140A61283279B6006ABBFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8140A76283279B7006ABBFF /* Preview Assets.xcassets in Resources */,
+				E8140A73283279B7006ABBFF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8140A5F283279B6006ABBFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8140A6D283279B6006ABBFF /* NotificationController.swift in Sources */,
+				E8B1E5AF2833E9E500E8164C /* MyActions.swift in Sources */,
+				E8140A6B283279B6006ABBFF /* ActionView.swift in Sources */,
+				E8140A71283279B6006ABBFF /* ComplicationController.swift in Sources */,
+				E8140A69283279B6006ABBFF /* testeswiftuiApp.swift in Sources */,
+				E8B1E5B32833EB6800E8164C /* ActionPageView.swift in Sources */,
+				E8140A6F283279B6006ABBFF /* NotificationView.swift in Sources */,
+				E8B1E5B12833EA0E00E8164C /* ActionModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8140A5B283279B4006ABBFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8140A57283279B4006ABBFF /* testeswiftui WatchKit App */;
+			targetProxy = E8140A5A283279B4006ABBFF /* PBXContainerItemProxy */;
+		};
+		E8140A66283279B6006ABBFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8140A62283279B6006ABBFF /* testeswiftui WatchKit Extension */;
+			targetProxy = E8140A65283279B6006ABBFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E8140A79283279B7006ABBFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8140A7A283279B7006ABBFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8140A7C283279B7006ABBFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"testeswiftui WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "testeswiftui WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "testeswiftui WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.karenbaliero.testeswiftui.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		E8140A7D283279B7006ABBFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"testeswiftui WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "testeswiftui WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "testeswiftui WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.karenbaliero.testeswiftui.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		E8140A80283279B7006ABBFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = testeswiftui_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "testeswiftui WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.karenbaliero.testeswiftui.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		E8140A81283279B7006ABBFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = testeswiftui_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "testeswiftui WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.karenbaliero.testeswiftui.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		E8140A84283279B7006ABBFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.karenbaliero.testeswiftui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E8140A85283279B7006ABBFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.karenbaliero.testeswiftui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8140A51283279B4006ABBFF /* Build configuration list for PBXProject "testeswiftui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8140A79283279B7006ABBFF /* Debug */,
+				E8140A7A283279B7006ABBFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8140A7B283279B7006ABBFF /* Build configuration list for PBXNativeTarget "testeswiftui WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8140A7C283279B7006ABBFF /* Debug */,
+				E8140A7D283279B7006ABBFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8140A7F283279B7006ABBFF /* Build configuration list for PBXNativeTarget "testeswiftui WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8140A80283279B7006ABBFF /* Debug */,
+				E8140A81283279B7006ABBFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8140A83283279B7006ABBFF /* Build configuration list for PBXNativeTarget "testeswiftui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8140A84283279B7006ABBFF /* Debug */,
+				E8140A85283279B7006ABBFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8140A4E283279B4006ABBFF /* Project object */;
+}
