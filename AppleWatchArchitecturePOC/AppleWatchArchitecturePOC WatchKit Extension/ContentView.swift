@@ -6,29 +6,24 @@
 //
 
 import SwiftUI
-//import Combine
 
 struct ContentView: View {
     @State private var crownRotation: Double = 0
     
-    private var digitalCrownObserver = DigitalCrownObserver.newInstance
-    private var tapGestureObserver = TapGestureObserver.newInstance
-    private var swipeGestureObserver = SwipeGestureObserver.newInstance
+    private var viewObserver = ViewObserver.newInstance
 
     var body: some View {
         GameView()
             .onTapGesture {
-                self.digitalCrownObserver.didRotateDigitalCrown = false
-                self.swipeGestureObserver.didSwipe = false
-                self.tapGestureObserver.didTap = true
+                viewObserver.onTapDetected()
             }
+            .onLongPressGesture(perform: {
+                print("Long press")
+            })
             .gesture(
                 DragGesture(minimumDistance: 20, coordinateSpace: .global)
                     .onEnded { value in
-                        self.digitalCrownObserver.didRotateDigitalCrown = false
-                        self.swipeGestureObserver.didSwipe = true
-                        self.tapGestureObserver.didTap = false
-                        
+                        viewObserver.onSwipeDetected()
                         
                         let horizontalAmount = value.translation.width as CGFloat
                         let verticalAmount = value.translation.height as CGFloat

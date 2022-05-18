@@ -7,25 +7,18 @@
 
 import Foundation
 
-class DigitalCrownAction: Action, DigitalCrownObserverDelegate {
-    var digitalCrownObserver = DigitalCrownObserver.newInstance
-    
+class DigitalCrownAction: Action, ViewObserverDelegate {
+    var viewObserver: ViewObserver = .newInstance
     var kind: ActionKind = .DIGITAL_CROWN
     var delegate: ActionDelegate?
     var text: String = "Gire!"
-    var detecting: Bool = false
     
-    func startDetection() {
-        self.detecting = true
-        digitalCrownObserver.delegate = self
+    init() {
+        viewObserver.addDelegate(self)
     }
     
-    func stopDetection() {
-        self.detecting = false
-    }
-    
-    func didRotateDigitalCrown() {
-        if (self.detecting) {
+    func didDetectViewInteration(kind: ActionKind) {
+        if (kind == .DIGITAL_CROWN) {
             self.delegate?.onDetected(kind: self.kind)
         }
     }

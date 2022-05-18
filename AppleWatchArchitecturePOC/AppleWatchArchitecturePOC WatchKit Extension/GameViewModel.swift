@@ -20,17 +20,10 @@ class GameViewModel: ObservableObject {
         actions.shuffle()
         currentAction = actions[0]
     }
-    
-    deinit {
-        for i in 0..<actions.count {
-            actions[i].stopDetection()
-        }
-    }
-    
+
     func startGame() {
         for var action in actions {
             action.delegate = self
-            action.startDetection()
         }
     }
     

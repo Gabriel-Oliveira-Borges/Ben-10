@@ -7,27 +7,21 @@
 
 import Foundation
 
-class SwipeAction: Action, SwipeGestureObserverDelegate {
-    var gestureObserver = SwipeGestureObserver.newInstance
+class SwipeAction: Action, ViewObserverDelegate {
+    var viewObserver: ViewObserver = .newInstance
     
     var kind: ActionKind = .SWIPE
     var delegate: ActionDelegate?
     var text: String = "Swipe"
     var detecting: Bool = false
     
-    func startDetection() {
-        self.detecting = true
-        gestureObserver.delegate = self
+    init() {
+        viewObserver.addDelegate(self)
     }
     
-    func stopDetection() {
-        self.detecting = false
-    }
-    
-    func didSwipe() {
-        if detecting {
+    func didDetectViewInteration(kind: ActionKind) {
+        if (kind == .SWIPE) {
             self.delegate?.onDetected(kind: self.kind)
         }
     }
-    
 }

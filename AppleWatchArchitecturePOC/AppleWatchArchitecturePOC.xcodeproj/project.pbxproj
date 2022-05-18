@@ -22,10 +22,8 @@
 		DBB42BAD2835302E00CFE091 /* DigitalCrownAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB42BAC2835302E00CFE091 /* DigitalCrownAction.swift */; };
 		DBB42BAF2835305C00CFE091 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB42BAE2835305C00CFE091 /* SwipeAction.swift */; };
 		DBB42BB12835307A00CFE091 /* TapAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB42BB02835307A00CFE091 /* TapAction.swift */; };
-		DBB42BB4283530A400CFE091 /* DigitalCrownObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB42BB3283530A400CFE091 /* DigitalCrownObserver.swift */; };
-		DBB42BB6283530E000CFE091 /* TapGestureObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB42BB5283530E000CFE091 /* TapGestureObserver.swift */; };
-		DBB42BB8283530FB00CFE091 /* SwipeGestureObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB42BB7283530FB00CFE091 /* SwipeGestureObserver.swift */; };
 		DBB42BBA2835316800CFE091 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB42BB92835316800CFE091 /* GameView.swift */; };
+		DBB42BBC2835343E00CFE091 /* ViewObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB42BBB2835343E00CFE091 /* ViewObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,10 +87,8 @@
 		DBB42BAC2835302E00CFE091 /* DigitalCrownAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownAction.swift; sourceTree = "<group>"; };
 		DBB42BAE2835305C00CFE091 /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
 		DBB42BB02835307A00CFE091 /* TapAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAction.swift; sourceTree = "<group>"; };
-		DBB42BB3283530A400CFE091 /* DigitalCrownObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownObserver.swift; sourceTree = "<group>"; };
-		DBB42BB5283530E000CFE091 /* TapGestureObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGestureObserver.swift; sourceTree = "<group>"; };
-		DBB42BB7283530FB00CFE091 /* SwipeGestureObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGestureObserver.swift; sourceTree = "<group>"; };
 		DBB42BB92835316800CFE091 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		DBB42BBB2835343E00CFE091 /* ViewObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,9 +171,7 @@
 		DBB42BB22835308E00CFE091 /* ViewObservers */ = {
 			isa = PBXGroup;
 			children = (
-				DBB42BB3283530A400CFE091 /* DigitalCrownObserver.swift */,
-				DBB42BB5283530E000CFE091 /* TapGestureObserver.swift */,
-				DBB42BB7283530FB00CFE091 /* SwipeGestureObserver.swift */,
+				DBB42BBB2835343E00CFE091 /* ViewObserver.swift */,
 			);
 			path = ViewObservers;
 			sourceTree = "<group>";
@@ -312,17 +306,15 @@
 				DBB42BAD2835302E00CFE091 /* DigitalCrownAction.swift in Sources */,
 				DB168B9C28328B21000E2670 /* NotificationController.swift in Sources */,
 				DB168BB628328CDC000E2670 /* BaseAction.swift in Sources */,
+				DBB42BBC2835343E00CFE091 /* ViewObserver.swift in Sources */,
 				DB168B9A28328B21000E2670 /* ContentView.swift in Sources */,
 				DB168BA028328B21000E2670 /* ComplicationController.swift in Sources */,
 				DBB42BAF2835305C00CFE091 /* SwipeAction.swift in Sources */,
 				DBB42BBA2835316800CFE091 /* GameView.swift in Sources */,
-				DBB42BB4283530A400CFE091 /* DigitalCrownObserver.swift in Sources */,
 				DB168B9828328B21000E2670 /* AppleWatchArchitecturePOCApp.swift in Sources */,
 				DBB42BB12835307A00CFE091 /* TapAction.swift in Sources */,
 				DB168B9E28328B21000E2670 /* NotificationView.swift in Sources */,
 				DB168BB82833DE11000E2670 /* GameViewModel.swift in Sources */,
-				DBB42BB6283530E000CFE091 /* TapGestureObserver.swift in Sources */,
-				DBB42BB8283530FB00CFE091 /* SwipeGestureObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

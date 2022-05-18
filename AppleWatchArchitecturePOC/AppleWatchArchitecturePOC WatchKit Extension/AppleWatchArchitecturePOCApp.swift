@@ -12,9 +12,7 @@ import Combine
 struct AppleWatchArchitecturePOCApp: App {
     @State private var crownRotation: Double = 0
     
-    private var digitalCrownObserver = DigitalCrownObserver.newInstance
-    private var tapGestureObserver = TapGestureObserver.newInstance
-    private var swipeGestureObserver = SwipeGestureObserver.newInstance
+    private var viewObserver = ViewObserver.newInstance
     
     private let relay = PassthroughSubject<Double, Never>()
     private let debouncedPublisher: AnyPublisher<Double, Never>
@@ -43,11 +41,8 @@ struct AppleWatchArchitecturePOCApp: App {
                         )
                         .onChange(of: crownRotation) { rotation in
                             relay.send(rotation)
-                        }.onReceive(debouncedPublisher, perform: { digitalCrownValue in                            
-                            self.digitalCrownObserver.didRotateDigitalCrown = true
-                            self.swipeGestureObserver.didSwipe = false
-                            self.tapGestureObserver.didTap = false
-                            
+                        }.onReceive(debouncedPublisher, perform: { digitalCrownValue in
+                            self.viewObserver.onDigitalCrownDetected()
                         })
                 }
             }

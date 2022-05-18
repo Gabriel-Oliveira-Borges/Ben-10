@@ -22,8 +22,4 @@ protocol Action {
     var kind: ActionKind { get }
     var delegate: ActionDelegate? {  get set }
     var text: String { get }
-    
-    mutating func startDetection()
-    
-    mutating func stopDetection()
 }
