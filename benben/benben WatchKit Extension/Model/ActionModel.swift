@@ -12,13 +12,14 @@ enum ActionType {
     case TAP
     case DIGITAL_CROWN
     case SWIPE
+    case LONG_PRESS
 }
 
 protocol ActionDelegate {
     func onDetected(type: ActionType)
 }
 
-protocol Action {
+protocol ActionModel {
     var type: ActionType { get }
     var delegate: ActionDelegate? { get set }
     var text: String { get }

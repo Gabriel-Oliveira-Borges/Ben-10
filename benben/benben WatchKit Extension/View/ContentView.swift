@@ -10,10 +10,25 @@ import SwiftUI
 struct ContentView: View {
     @State private var crownRotation: Double = 0
     
-    private var viewObserver = viewObserver
+    private var viewObserver = ViewObserver.newInstance
+    
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        GameView()
+            .onTapGesture {
+                viewObserver.onTapDetected()
+                print("tap")
+            }
+            .onLongPressGesture {
+                print("long press")
+                viewObserver.onLongPressDetected()
+            }
+            .gesture(
+                DragGesture(minimumDistance: 20, coordinateSpace: .global)
+                    .onEnded { value in
+                        viewObserver.onSwipeDetected()
+                        print("swip")
+                    }
+            )
     }
 }
 

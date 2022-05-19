@@ -36,6 +36,10 @@ class ViewObserver {
         notifyDelegates(type: .SWIPE)
     }
     
+    func onLongPressDetected() {
+        notifyDelegates(type: .LONG_PRESS)
+    }
+    
     func onDigitalCrownDetected() {
         notifyDelegates(type: .DIGITAL_CROWN)
     }

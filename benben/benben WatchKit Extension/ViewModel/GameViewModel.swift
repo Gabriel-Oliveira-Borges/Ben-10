@@ -8,8 +8,8 @@
 import Foundation
 
 class GameViewModel: ObservableObject {
-    private var actions: [Action] = []
-    @Published var currentAction: Action
+    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeActionModel(), ]
+    @Published var currentAction: ActionModel
     
     init() {
         currentAction = actions.randomElement()!

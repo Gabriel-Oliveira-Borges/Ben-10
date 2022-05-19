@@ -22,6 +22,7 @@
 		E8196D8228366B740076F3D6 /* ActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D8128366B740076F3D6 /* ActionModel.swift */; };
 		E8196D8528366DF70076F3D6 /* ViewObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D8428366DF70076F3D6 /* ViewObserver.swift */; };
 		E8196D8728366F0F0076F3D6 /* DigitalCrownActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D8628366F0F0076F3D6 /* DigitalCrownActionModel.swift */; };
+		E8196D89283683230076F3D6 /* SwipeActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D88283683230076F3D6 /* SwipeActionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		E8196D8128366B740076F3D6 /* ActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionModel.swift; sourceTree = "<group>"; };
 		E8196D8428366DF70076F3D6 /* ViewObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewObserver.swift; sourceTree = "<group>"; };
 		E8196D8628366F0F0076F3D6 /* DigitalCrownActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownActionModel.swift; sourceTree = "<group>"; };
+		E8196D88283683230076F3D6 /* SwipeActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			children = (
 				E8196D8128366B740076F3D6 /* ActionModel.swift */,
 				E8196D8628366F0F0076F3D6 /* DigitalCrownActionModel.swift */,
+				E8196D88283683230076F3D6 /* SwipeActionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			files = (
 				E8196D61283669800076F3D6 /* NotificationController.swift in Sources */,
 				E8196D5F283669800076F3D6 /* ContentView.swift in Sources */,
+				E8196D89283683230076F3D6 /* SwipeActionModel.swift in Sources */,
 				E8196D8728366F0F0076F3D6 /* DigitalCrownActionModel.swift in Sources */,
 				E8196D65283669800076F3D6 /* ComplicationController.swift in Sources */,
 				E8196D8528366DF70076F3D6 /* ViewObserver.swift in Sources */,
