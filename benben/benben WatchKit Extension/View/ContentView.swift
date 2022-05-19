@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var crownRotation: Double = 0
+    
+    private var viewObserver = viewObserver
     var body: some View {
         Text("Hello, World!")
             .padding()
