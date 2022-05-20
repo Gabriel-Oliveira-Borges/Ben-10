@@ -13,7 +13,7 @@ enum GameViewModelViewAction {
 }
 
 class GameViewModel: ObservableObject {
-    private var actions: [Action] = [SwipeAction(), TapAction(), DigitalCrownAction()]
+    private var actions: [Action] = [ShakeAction()]
     @Published var currentAction: Action
     
     init() {

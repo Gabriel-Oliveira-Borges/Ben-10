@@ -12,6 +12,7 @@ enum ActionKind {
     case TAP
     case DIGITAL_CROWN
     case SWIPE
+    case SHAKE_UP
 }
 
 protocol ActionDelegate {

@@ -24,6 +24,8 @@
 		DBB42BB12835307A00CFE091 /* TapAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB42BB02835307A00CFE091 /* TapAction.swift */; };
 		DBB42BBA2835316800CFE091 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB42BB92835316800CFE091 /* GameView.swift */; };
 		DBB42BBC2835343E00CFE091 /* ViewObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB42BBB2835343E00CFE091 /* ViewObserver.swift */; };
+		DBB42BBE283680DE00CFE091 /* ShakeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB42BBD283680DE00CFE091 /* ShakeAction.swift */; };
+		DBB42BC02836899B00CFE091 /* ShakeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB42BBF2836899B00CFE091 /* ShakeObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		DBB42BB02835307A00CFE091 /* TapAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAction.swift; sourceTree = "<group>"; };
 		DBB42BB92835316800CFE091 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		DBB42BBB2835343E00CFE091 /* ViewObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewObserver.swift; sourceTree = "<group>"; };
+		DBB42BBD283680DE00CFE091 /* ShakeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeAction.swift; sourceTree = "<group>"; };
+		DBB42BBF2836899B00CFE091 /* ShakeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +136,7 @@
 		DB168B9628328B21000E2670 /* AppleWatchArchitecturePOC WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				DBB42BB22835308E00CFE091 /* ViewObservers */,
+				DBB42BB22835308E00CFE091 /* Observers */,
 				DBB42BAB2835301200CFE091 /* Actions */,
 				DB168B9728328B21000E2670 /* AppleWatchArchitecturePOCApp.swift */,
 				DB168B9928328B21000E2670 /* ContentView.swift */,
@@ -164,16 +168,18 @@
 				DBB42BAC2835302E00CFE091 /* DigitalCrownAction.swift */,
 				DBB42BAE2835305C00CFE091 /* SwipeAction.swift */,
 				DBB42BB02835307A00CFE091 /* TapAction.swift */,
+				DBB42BBD283680DE00CFE091 /* ShakeAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
 		};
-		DBB42BB22835308E00CFE091 /* ViewObservers */ = {
+		DBB42BB22835308E00CFE091 /* Observers */ = {
 			isa = PBXGroup;
 			children = (
 				DBB42BBB2835343E00CFE091 /* ViewObserver.swift */,
+				DBB42BBF2836899B00CFE091 /* ShakeObserver.swift */,
 			);
-			path = ViewObservers;
+			path = Observers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,11 +315,13 @@
 				DBB42BBC2835343E00CFE091 /* ViewObserver.swift in Sources */,
 				DB168B9A28328B21000E2670 /* ContentView.swift in Sources */,
 				DB168BA028328B21000E2670 /* ComplicationController.swift in Sources */,
+				DBB42BBE283680DE00CFE091 /* ShakeAction.swift in Sources */,
 				DBB42BAF2835305C00CFE091 /* SwipeAction.swift in Sources */,
 				DBB42BBA2835316800CFE091 /* GameView.swift in Sources */,
 				DB168B9828328B21000E2670 /* AppleWatchArchitecturePOCApp.swift in Sources */,
 				DBB42BB12835307A00CFE091 /* TapAction.swift in Sources */,
 				DB168B9E28328B21000E2670 /* NotificationView.swift in Sources */,
+				DBB42BC02836899B00CFE091 /* ShakeObserver.swift in Sources */,
 				DB168BB82833DE11000E2670 /* GameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
