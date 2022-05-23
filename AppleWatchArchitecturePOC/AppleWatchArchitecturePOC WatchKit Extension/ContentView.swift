@@ -7,11 +7,12 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     @State private var crownRotation: Double = 0
     
     private var viewObserver = ViewObserver.newInstance
-
+    
     var body: some View {
         GameView()
             .onTapGesture {
@@ -54,5 +55,11 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+
+class aa {
+//    TODO: Se pá um jeito de detectar que a mão foi posta em cima é vendo se o app foi pra background e voltou. Só precisamos checar se o app vai pra background msm quando a mão é posta em cima. Acho que é o único jeito
     }
 }
