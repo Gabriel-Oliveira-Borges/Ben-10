@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct TapAction: Action, ViewObserverDelegate {
+class TapAction: Action, ViewObserverDelegate {
     var viewObserver: ViewObserver = .newInstance
         
     var kind: ActionKind = .TAP

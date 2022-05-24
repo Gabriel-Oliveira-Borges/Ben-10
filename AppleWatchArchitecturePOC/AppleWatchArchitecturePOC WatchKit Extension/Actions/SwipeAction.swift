@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SwipeAction: Action, ViewObserverDelegate {
+class SwipeAction: Action, ViewObserverDelegate {
     var viewObserver: ViewObserver = .newInstance
     
     var kind: ActionKind = .SWIPE
