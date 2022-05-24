@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DigitalCrownActionModel: ActionModel, ViewObserverDelegate {
+class DigitalCrownActionModel: ActionModel, ViewObserverDelegate {
     var viewObserver: ViewObserver = .newInstance
     var type: ActionType = .DIGITAL_CROWN
     var delegate: ActionDelegate?

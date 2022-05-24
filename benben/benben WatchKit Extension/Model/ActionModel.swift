@@ -12,7 +12,6 @@ enum ActionType {
     case TAP
     case DIGITAL_CROWN
     case SWIPE
-    case LONG_PRESS
 }
 
 protocol ActionDelegate {

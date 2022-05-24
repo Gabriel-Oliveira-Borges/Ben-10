@@ -22,12 +22,6 @@ class ViewObserver {
         self.delegates.append(delegate)
     }
     
-    private func notifyDelegates(type: ActionType) {
-        delegates.forEach { delegate in
-            delegate.didDetectViewInteraction(type: type)
-        }
-    }
-    
     func onTapDetected() {
         notifyDelegates(type: .TAP)
     }
@@ -36,11 +30,14 @@ class ViewObserver {
         notifyDelegates(type: .SWIPE)
     }
     
-    func onLongPressDetected() {
-        notifyDelegates(type: .LONG_PRESS)
-    }
-    
     func onDigitalCrownDetected() {
         notifyDelegates(type: .DIGITAL_CROWN)
+    }
+    
+    
+    private func notifyDelegates(type: ActionType) {
+        delegates.forEach { delegate in
+            delegate.didDetectViewInteraction(type: type)
+        }
     }
 }

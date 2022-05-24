@@ -8,7 +8,7 @@
 import Foundation
 
 class GameViewModel: ObservableObject {
-    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeActionModel(), ]
+    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeActionModel(), TapAction()]
     @Published var currentAction: ActionModel
     
     init() {
@@ -28,7 +28,10 @@ class GameViewModel: ObservableObject {
 
 extension GameViewModel: ActionDelegate {
     internal func onDetected(type: ActionType) {
+        print("Detected: \(type)")
+        print("Expected: \(currentAction.type)")
         if (type == currentAction.type) {
+            print("Correct Action")
             nextAction()
         } else {
             print("Wrong Action")
