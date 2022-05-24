@@ -6,6 +6,8 @@
 //
 
 import Foundation
+private var counter: Int = 0
+
 
 class GameViewModel: ObservableObject {
     private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeActionModel(), TapAction()]
@@ -30,8 +32,10 @@ extension GameViewModel: ActionDelegate {
     internal func onDetected(type: ActionType) {
         print("Detected: \(type)")
         print("Expected: \(currentAction.type)")
+        print(counter)
         if (type == currentAction.type) {
             print("Correct Action")
+            counter = counter + 1
             nextAction()
         } else {
             print("Wrong Action")
