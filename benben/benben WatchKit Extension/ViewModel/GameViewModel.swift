@@ -32,9 +32,11 @@ extension GameViewModel: ActionDelegate {
         print("Expected: \(currentAction.type)")
         if (type == currentAction.type) {
             print("Correct Action")
+            SoundManager.instance.playSound(sound: .right)
             nextAction()
         } else {
             print("Wrong Action")
+            SoundManager.instance.playSound(sound: .wrong)
         }
     }
 }
