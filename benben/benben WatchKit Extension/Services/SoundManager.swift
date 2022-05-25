@@ -10,13 +10,12 @@ import AVFoundation
 
 
 class SoundManager {
-    static let instance = SoundManager()
     
     var player: AVAudioPlayer?
     
     enum SoundOption: String {
-        case right
-        case wrong
+        case right = "right"
+        case wrong = "wrong"
     }
     
     func playSound(sound: SoundOption) {
