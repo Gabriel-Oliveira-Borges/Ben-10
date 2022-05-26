@@ -19,6 +19,12 @@ class GameViewModel: ObservableObject {
         nextAction()
     }
     
+    private func stopGame() {
+        for var action in actions {
+            action.delegate = nil
+        }
+    }
+    
     private func nextAction() {
         (currentAction as? ShakeActionModel)?.stopDetection()
         currentAction = actions.randomElement()!
@@ -38,6 +44,7 @@ extension GameViewModel: ActionDelegate {
             nextAction()
         } else {
             print("Wrong Action")
+            self.stopGame()
         }
     }
 }
