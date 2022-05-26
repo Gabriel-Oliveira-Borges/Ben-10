@@ -15,6 +15,6 @@ struct GameView: View {
     }
     
     var body: some View {
-        Text(gameViewModel.currentAction.text)
+        Text(gameViewModel.currentAction!.text)
     }
 }

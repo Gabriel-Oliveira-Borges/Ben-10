@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB44C4D1283E82720004AB7E /* ShakeCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D0283E82720004AB7E /* ShakeCoordinates.swift */; };
+		DB44C4D3283E82860004AB7E /* ShakeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D2283E82860004AB7E /* ShakeDirection.swift */; };
+		DB44C4D5283E82990004AB7E /* ShakeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D4283E82990004AB7E /* ShakeObserver.swift */; };
+		DB44C4D7283E82C20004AB7E /* ShakeSensibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D6283E82C20004AB7E /* ShakeSensibility.swift */; };
+		DB44C4D9283E82D60004AB7E /* WatchDownAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D8283E82D60004AB7E /* WatchDownAction.swift */; };
+		DB44C4DD283E83850004AB7E /* PunchAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4DC283E83850004AB7E /* PunchAction.swift */; };
+		DB44C4DF283E839B0004AB7E /* WatchUpAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4DE283E839B0004AB7E /* WatchUpAction.swift */; };
 		DBD937EA283CFE1400AF00D9 /* TapActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */; };
 		E8196D4D2836697E0076F3D6 /* benben WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E8196D52283669800076F3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8196D51283669800076F3D6 /* Assets.xcassets */; };
@@ -69,6 +76,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DB44C4D0283E82720004AB7E /* ShakeCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeCoordinates.swift; sourceTree = "<group>"; };
+		DB44C4D2283E82860004AB7E /* ShakeDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDirection.swift; sourceTree = "<group>"; };
+		DB44C4D4283E82990004AB7E /* ShakeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeObserver.swift; sourceTree = "<group>"; };
+		DB44C4D6283E82C20004AB7E /* ShakeSensibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeSensibility.swift; sourceTree = "<group>"; };
+		DB44C4D8283E82D60004AB7E /* WatchDownAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDownAction.swift; sourceTree = "<group>"; };
+		DB44C4DC283E83850004AB7E /* PunchAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchAction.swift; sourceTree = "<group>"; };
+		DB44C4DE283E839B0004AB7E /* WatchUpAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchUpAction.swift; sourceTree = "<group>"; };
 		DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapActionModel.swift; sourceTree = "<group>"; };
 		E8196D482836697E0076F3D6 /* benben.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benben.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "benben WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +116,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB44C4CF283E82600004AB7E /* ShakeObserver */ = {
+			isa = PBXGroup;
+			children = (
+				DB44C4D0283E82720004AB7E /* ShakeCoordinates.swift */,
+				DB44C4D2283E82860004AB7E /* ShakeDirection.swift */,
+				DB44C4D4283E82990004AB7E /* ShakeObserver.swift */,
+				DB44C4D6283E82C20004AB7E /* ShakeSensibility.swift */,
+			);
+			path = ShakeObserver;
+			sourceTree = "<group>";
+		};
 		E8196D412836697E0076F3D6 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +157,7 @@
 		E8196D5B283669800076F3D6 /* benben WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E8196D8328366DD10076F3D6 /* ViewObserver */,
+				E8196D8328366DD10076F3D6 /* Observers */,
 				E8196D8028366AE70076F3D6 /* Model */,
 				E8196D7D28366A8E0076F3D6 /* ViewModel */,
 				E8196D7A28366A430076F3D6 /* View */,
@@ -180,16 +205,20 @@
 				E8196D8628366F0F0076F3D6 /* DigitalCrownActionModel.swift */,
 				E8196D88283683230076F3D6 /* SwipeActionModel.swift */,
 				DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */,
+				DB44C4DC283E83850004AB7E /* PunchAction.swift */,
+				DB44C4D8283E82D60004AB7E /* WatchDownAction.swift */,
+				DB44C4DE283E839B0004AB7E /* WatchUpAction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		E8196D8328366DD10076F3D6 /* ViewObserver */ = {
+		E8196D8328366DD10076F3D6 /* Observers */ = {
 			isa = PBXGroup;
 			children = (
+				DB44C4CF283E82600004AB7E /* ShakeObserver */,
 				E8196D8428366DF70076F3D6 /* ViewObserver.swift */,
 			);
-			path = ViewObserver;
+			path = Observers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,15 +350,22 @@
 			files = (
 				E8196D61283669800076F3D6 /* NotificationController.swift in Sources */,
 				E8196D5F283669800076F3D6 /* ContentView.swift in Sources */,
+				DB44C4DF283E839B0004AB7E /* WatchUpAction.swift in Sources */,
 				E8196D89283683230076F3D6 /* SwipeActionModel.swift in Sources */,
+				DB44C4D5283E82990004AB7E /* ShakeObserver.swift in Sources */,
+				DB44C4DD283E83850004AB7E /* PunchAction.swift in Sources */,
 				DBD937EA283CFE1400AF00D9 /* TapActionModel.swift in Sources */,
 				E8196D8728366F0F0076F3D6 /* DigitalCrownActionModel.swift in Sources */,
+				DB44C4D9283E82D60004AB7E /* WatchDownAction.swift in Sources */,
 				E8196D65283669800076F3D6 /* ComplicationController.swift in Sources */,
 				E8196D8528366DF70076F3D6 /* ViewObserver.swift in Sources */,
 				E8196D8228366B740076F3D6 /* ActionModel.swift in Sources */,
 				E8196D5D283669800076F3D6 /* benbenApp.swift in Sources */,
 				E8196D7C28366A700076F3D6 /* GameView.swift in Sources */,
+				DB44C4D1283E82720004AB7E /* ShakeCoordinates.swift in Sources */,
+				DB44C4D7283E82C20004AB7E /* ShakeSensibility.swift in Sources */,
 				E8196D63283669800076F3D6 /* NotificationView.swift in Sources */,
+				DB44C4D3283E82860004AB7E /* ShakeDirection.swift in Sources */,
 				E8196D7F28366ACA0076F3D6 /* GameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,7 +505,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"benben WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "benben WatchKit Extension/Info.plist";
@@ -501,7 +537,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"benben WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "benben WatchKit Extension/Info.plist";
@@ -534,7 +570,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = benben_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "benben WatchKit App";
@@ -559,7 +595,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = benben_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "benben WatchKit App";
@@ -581,7 +617,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.karenbaliero.benben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -594,7 +630,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.karenbaliero.benben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
