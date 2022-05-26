@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import WatchKit
 
 struct GameView: View {
     @ObservedObject var gameViewModel: GameViewModel = GameViewModel()

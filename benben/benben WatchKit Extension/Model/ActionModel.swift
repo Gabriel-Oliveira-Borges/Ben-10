@@ -40,13 +40,12 @@ protocol ShakeActionModel: ActionModel, ShakeObserverDelegate {
 
 extension ShakeActionModel {
     func startDetection() {
-        print("\(self) has started detecting motion")
         shakeObserver.delegate = self
         shakeObserver.start()
     }
     
     func stopDetection() {
-        print("\(self) has stopped detecting motion")
+        shakeObserver.delegate = nil
         shakeObserver.stop()
     }
 }
