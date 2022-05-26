@@ -15,6 +15,7 @@ enum ActionType {
     case PUNCH
     case WATCH_UP
     case WATCH_DOWN
+    case SHAKE
 }
 
 protocol ActionDelegate {

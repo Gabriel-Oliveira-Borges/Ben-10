@@ -6,15 +6,18 @@
 //
 
 import SwiftUI
+import WatchKit
 
 struct GameView: View {
     @ObservedObject var gameViewModel: GameViewModel = GameViewModel()
-    
+    @State var actionText: String = ""
     init() {
         gameViewModel.startGame()
     }
     
     var body: some View {
-        Text(gameViewModel.currentAction!.text)
+        Text(actionText).onReceive(gameViewModel.$currentAction) { result in
+            self.actionText = result!.text
+        }
     }
 }

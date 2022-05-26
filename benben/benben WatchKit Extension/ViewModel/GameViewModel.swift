@@ -8,7 +8,7 @@
 import Foundation
 
 class GameViewModel: ObservableObject {
-    private var actions: [ActionModel] = [WatchUpAction(), WatchDownAction(), PunchAction(), DigitalCrownActionModel(), SwipeActionModel(), TapAction()]
+    private var actions: [ActionModel] = [ShakeAction(), DigitalCrownActionModel(), SwipeActionModel(), TapAction(), WatchUpAction(), WatchDownAction(), PunchAction()]
     @Published var currentAction: ActionModel?
     
     func startGame() {
