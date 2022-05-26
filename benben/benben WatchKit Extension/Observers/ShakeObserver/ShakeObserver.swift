@@ -60,7 +60,7 @@ class ShakeObserver {
             self.coodinates = ShakeCoordinates.accelerationToShakeCoordinates(data.acceleration)
             let maxValue = self.coodinates!.getMaxValue()
 
-            if (maxValue > self.sensibility.rawValue && self.isDateValid()) {
+            if ((maxValue > self.sensibility.rawValue || fabs(self.coodinates!.z) > self.sensibility.rawValue) && self.isDateValid()) {
                 self.lastShakeDate = Date()
                 self.didShake()
             }

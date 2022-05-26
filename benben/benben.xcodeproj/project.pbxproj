@@ -14,6 +14,7 @@
 		DB44C4D9283E82D60004AB7E /* WatchDownAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D8283E82D60004AB7E /* WatchDownAction.swift */; };
 		DB44C4DD283E83850004AB7E /* PunchAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4DC283E83850004AB7E /* PunchAction.swift */; };
 		DB44C4DF283E839B0004AB7E /* WatchUpAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4DE283E839B0004AB7E /* WatchUpAction.swift */; };
+		DB6E725D283FBB5500A8FF7E /* CelebrateAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E725C283FBB5500A8FF7E /* CelebrateAction.swift */; };
 		DBD937EA283CFE1400AF00D9 /* TapActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */; };
 		DBECC165283FA8D700094487 /* ShakeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECC164283FA8D700094487 /* ShakeAction.swift */; };
 		E8196D4D2836697E0076F3D6 /* benben WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -84,6 +85,7 @@
 		DB44C4D8283E82D60004AB7E /* WatchDownAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDownAction.swift; sourceTree = "<group>"; };
 		DB44C4DC283E83850004AB7E /* PunchAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchAction.swift; sourceTree = "<group>"; };
 		DB44C4DE283E839B0004AB7E /* WatchUpAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchUpAction.swift; sourceTree = "<group>"; };
+		DB6E725C283FBB5500A8FF7E /* CelebrateAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrateAction.swift; sourceTree = "<group>"; };
 		DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapActionModel.swift; sourceTree = "<group>"; };
 		DBECC164283FA8D700094487 /* ShakeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeAction.swift; sourceTree = "<group>"; };
 		E8196D482836697E0076F3D6 /* benben.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benben.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +213,7 @@
 				DB44C4D8283E82D60004AB7E /* WatchDownAction.swift */,
 				DB44C4DE283E839B0004AB7E /* WatchUpAction.swift */,
 				DBECC164283FA8D700094487 /* ShakeAction.swift */,
+				DB6E725C283FBB5500A8FF7E /* CelebrateAction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				DB44C4D1283E82720004AB7E /* ShakeCoordinates.swift in Sources */,
 				DB44C4D7283E82C20004AB7E /* ShakeSensibility.swift in Sources */,
 				E8196D63283669800076F3D6 /* NotificationView.swift in Sources */,
+				DB6E725D283FBB5500A8FF7E /* CelebrateAction.swift in Sources */,
 				DB44C4D3283E82860004AB7E /* ShakeDirection.swift in Sources */,
 				E8196D7F28366ACA0076F3D6 /* GameViewModel.swift in Sources */,
 			);

@@ -18,13 +18,13 @@ import Foundation
 // - shakeDirectionLeft: x variation < 0 (Like a pull a door to you)
 //
 // - shakeDirectionUnknow: When it's not possible to determine
-enum ShakeDirection: String {
+enum ShakeDirection {
 
-    case SHAKE_UP = "up"
-    case SHAKE_DOWN = "down"
-    case SHAKE_LEFT = "left"
-    case PUNCH = "right"
-    case SHAKE_UNKNOWN = "unknown"
+    case SHAKE_UP
+    case SHAKE_DOWN
+    case SHAKE_LEFT
+    case PUNCH
+    case SHAKE_UNKNOWN
 
     static func shakeCoordenatesToShakeDirection(_ x: Double, _ y: Double) -> ShakeDirection {
         return getShakeDirection(x, y)
