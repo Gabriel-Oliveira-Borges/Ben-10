@@ -15,6 +15,15 @@ struct GameView: View {
     }
     
     var body: some View {
-        Text(gameViewModel.currentAction.text)
+        switch gameViewModel.state {
+        case .PLAYING:
+            Text(gameViewModel.currentAction.text)
+        case .RIGHTACTION:
+            RightActionView(actionFeedback: .right)
+        case .WRONGACTION:
+            RightActionView(actionFeedback: .wrong)
+        case .ENDED:
+            EndGameView(endGameTitle: "Final score:", finalScore: 20, gameViewModel: gameViewModel)
+        }
     }
 }

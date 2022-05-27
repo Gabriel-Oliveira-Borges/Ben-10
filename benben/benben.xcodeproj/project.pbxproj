@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DBD937EA283CFE1400AF00D9 /* TapActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */; };
+		E80A1487283FB5B0009DE28B /* RightActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A1486283FB5B0009DE28B /* RightActionView.swift */; };
 		E8196D4D2836697E0076F3D6 /* benben WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E8196D52283669800076F3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8196D51283669800076F3D6 /* Assets.xcassets */; };
 		E8196D58283669800076F3D6 /* benben WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8196D57283669800076F3D6 /* benben WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -27,6 +28,7 @@
 		E848F908283D2026009AE90D /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E848F907283D2026009AE90D /* SoundManager.swift */; };
 		E848F90C283D239E009AE90D /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E848F90A283D239E009AE90D /* right.mp3 */; };
 		E848F90D283D239E009AE90D /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E848F90B283D239E009AE90D /* wrong.mp3 */; };
+		E8E366E2283E783D00F415A9 /* EndGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E366E1283E783D00F415A9 /* EndGameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,7 @@
 
 /* Begin PBXFileReference section */
 		DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapActionModel.swift; sourceTree = "<group>"; };
+		E80A1486283FB5B0009DE28B /* RightActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightActionView.swift; sourceTree = "<group>"; };
 		E8196D482836697E0076F3D6 /* benben.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benben.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "benben WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8196D51283669800076F3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		E848F907283D2026009AE90D /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		E848F90A283D239E009AE90D /* right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = right.mp3; path = ../../../../sons/right.mp3; sourceTree = "<group>"; };
 		E848F90B283D239E009AE90D /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wrong.mp3; path = ../../../../sons/wrong.mp3; sourceTree = "<group>"; };
+		E8E366E1283E783D00F415A9 /* EndGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,8 @@
 			children = (
 				E8196D5E283669800076F3D6 /* ContentView.swift */,
 				E8196D7B28366A700076F3D6 /* GameView.swift */,
+				E8E366E1283E783D00F415A9 /* EndGameView.swift */,
+				E80A1486283FB5B0009DE28B /* RightActionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -347,11 +353,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8196D61283669800076F3D6 /* NotificationController.swift in Sources */,
+				E80A1487283FB5B0009DE28B /* RightActionView.swift in Sources */,
 				E8196D5F283669800076F3D6 /* ContentView.swift in Sources */,
 				E8196D89283683230076F3D6 /* SwipeActionModel.swift in Sources */,
 				DBD937EA283CFE1400AF00D9 /* TapActionModel.swift in Sources */,
 				E848F908283D2026009AE90D /* SoundManager.swift in Sources */,
 				E8196D8728366F0F0076F3D6 /* DigitalCrownActionModel.swift in Sources */,
+				E8E366E2283E783D00F415A9 /* EndGameView.swift in Sources */,
 				E8196D65283669800076F3D6 /* ComplicationController.swift in Sources */,
 				E8196D8528366DF70076F3D6 /* ViewObserver.swift in Sources */,
 				E8196D8228366B740076F3D6 /* ActionModel.swift in Sources */,
