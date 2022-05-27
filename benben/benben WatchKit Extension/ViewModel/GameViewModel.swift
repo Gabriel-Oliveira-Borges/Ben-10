@@ -8,9 +8,8 @@
 import Foundation
 
 class GameViewModel: ObservableObject {
-    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeActionModel(), TapAction()]
+    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeActionModel(), TapAction(), LongPressAction()]
     private let soundEffectManager = SoundManager()
-
     @Published var currentAction: ActionModel
     
     init() {
