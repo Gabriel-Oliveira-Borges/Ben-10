@@ -22,6 +22,10 @@ class ViewObserver {
         self.delegates.append(delegate)
     }
     
+    func onLongPressDetected() {
+        notifyDelegates(type: .LONG_PRESS)
+    }
+    
     func onTapDetected() {
         notifyDelegates(type: .TAP)
     }
