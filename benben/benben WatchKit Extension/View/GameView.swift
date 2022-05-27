@@ -15,6 +15,9 @@ struct GameView: View {
     }
     
     var body: some View {
-        Text(gameViewModel.currentAction.text)
+        VStack{
+            Text(gameViewModel.currentAction.text)
+            Text("\(gameViewModel.counter)")
+        }
     }
 }
