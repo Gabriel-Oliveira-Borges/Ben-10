@@ -1,25 +1,25 @@
 //
-//  SwipeActionModel.swift
+//  SwipeDownAction.swift
 //  benben WatchKit Extension
 //
-//  Created by Karen Lima on 19/05/22.
+//  Created by Gabriel Oliveira Borges on 26/05/22.
 //
 
-import SwiftUI
+import Foundation
 
-class SwipeActionModel: ActionModel, ViewObserverDelegate {
+class SwipeDownAction: ActionModel, ViewObserverDelegate {
     var viewObserver: ViewObserver = .newInstance
     
-    var type: ActionType = .SWIPE
+    var type: ActionType = .SWIPE_DOWN
     var delegate: ActionDelegate?
-    var text: String = "Swipe"
+    var text: String = "Swipe down"
     
     init() {
         viewObserver.addDelegate(self)
     }
     
     func didDetectViewInteraction(type: ActionType) {
-        if(type == .SWIPE) {
+        if(type == .SWIPE_DOWN) {
             self.delegate?.onDetected(type: self.type)
         }
     }
