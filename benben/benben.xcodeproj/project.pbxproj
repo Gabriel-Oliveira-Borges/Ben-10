@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		DBD937EA283CFE1400AF00D9 /* TapActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */; };
 		DBD937EC283CFFB100AF00D9 /* LongPressActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD937EB283CFFB100AF00D9 /* LongPressActionModel.swift */; };
+		DBFE2054284116F100C4A34A /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFE2053284116F100C4A34A /* SoundManager.swift */; };
+		DBFE20582841173800C4A34A /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBFE20562841173800C4A34A /* right.mp3 */; };
+		DBFE20592841173800C4A34A /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBFE20562841173800C4A34A /* right.mp3 */; };
+		DBFE205A2841173800C4A34A /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBFE20562841173800C4A34A /* right.mp3 */; };
+		DBFE205B2841173800C4A34A /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBFE20572841173800C4A34A /* wrong.mp3 */; };
+		DBFE205C2841173800C4A34A /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBFE20572841173800C4A34A /* wrong.mp3 */; };
+		DBFE205D2841173800C4A34A /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBFE20572841173800C4A34A /* wrong.mp3 */; };
 		E8196D4D2836697E0076F3D6 /* benben WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E8196D52283669800076F3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8196D51283669800076F3D6 /* Assets.xcassets */; };
 		E8196D58283669800076F3D6 /* benben WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8196D57283669800076F3D6 /* benben WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -72,6 +79,9 @@
 /* Begin PBXFileReference section */
 		DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapActionModel.swift; sourceTree = "<group>"; };
 		DBD937EB283CFFB100AF00D9 /* LongPressActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressActionModel.swift; sourceTree = "<group>"; };
+		DBFE2053284116F100C4A34A /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		DBFE20562841173800C4A34A /* right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = right.mp3; sourceTree = "<group>"; };
+		DBFE20572841173800C4A34A /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
 		E8196D482836697E0076F3D6 /* benben.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benben.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "benben WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8196D51283669800076F3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +114,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DBFE2052284116D500C4A34A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DBFE2053284116F100C4A34A /* SoundManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DBFE20552841172900C4A34A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				DBFE20562841173800C4A34A /* right.mp3 */,
+				DBFE20572841173800C4A34A /* wrong.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		E8196D412836697E0076F3D6 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +161,8 @@
 		E8196D5B283669800076F3D6 /* benben WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DBFE20552841172900C4A34A /* Sounds */,
+				DBFE2052284116D500C4A34A /* Services */,
 				E8196D8328366DD10076F3D6 /* ViewObserver */,
 				E8196D8028366AE70076F3D6 /* Model */,
 				E8196D7D28366A8E0076F3D6 /* ViewModel */,
@@ -295,6 +324,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBFE205B2841173800C4A34A /* wrong.mp3 in Resources */,
+				DBFE20582841173800C4A34A /* right.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8196D52283669800076F3D6 /* Assets.xcassets in Resources */,
+				DBFE205C2841173800C4A34A /* wrong.mp3 in Resources */,
+				DBFE20592841173800C4A34A /* right.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +343,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBFE205D2841173800C4A34A /* wrong.mp3 in Resources */,
+				DBFE205A2841173800C4A34A /* right.mp3 in Resources */,
 				E8196D6A283669810076F3D6 /* Preview Assets.xcassets in Resources */,
 				E8196D67283669810076F3D6 /* Assets.xcassets in Resources */,
 			);
@@ -326,6 +361,7 @@
 				E8196D5F283669800076F3D6 /* ContentView.swift in Sources */,
 				E8196D89283683230076F3D6 /* SwipeActionModel.swift in Sources */,
 				DBD937EA283CFE1400AF00D9 /* TapActionModel.swift in Sources */,
+				DBFE2054284116F100C4A34A /* SoundManager.swift in Sources */,
 				E8196D8728366F0F0076F3D6 /* DigitalCrownActionModel.swift in Sources */,
 				E8196D65283669800076F3D6 /* ComplicationController.swift in Sources */,
 				E8196D8528366DF70076F3D6 /* ViewObserver.swift in Sources */,
@@ -473,7 +509,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"benben WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "benben WatchKit Extension/Info.plist";
@@ -505,7 +541,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"benben WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "benben WatchKit Extension/Info.plist";
@@ -538,7 +574,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = benben_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "benben WatchKit App";
@@ -563,7 +599,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = benben_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "benben WatchKit App";
@@ -585,7 +621,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.karenbaliero.benben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -598,7 +634,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.karenbaliero.benben;
 				PRODUCT_NAME = "$(TARGET_NAME)";

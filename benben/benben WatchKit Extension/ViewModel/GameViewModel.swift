@@ -9,6 +9,7 @@ import Foundation
 
 class GameViewModel: ObservableObject {
     private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeActionModel(), TapAction(), LongPressAction()]
+    private let soundEffectManager = SoundManager()
     @Published var currentAction: ActionModel
     
     init() {
@@ -32,9 +33,11 @@ extension GameViewModel: ActionDelegate {
         print("Expected: \(currentAction.type)")
         if (type == currentAction.type) {
             print("Correct Action")
+            soundEffectManager.playSound(sound: .right)
             nextAction()
         } else {
             print("Wrong Action")
+            soundEffectManager.playSound(sound: .wrong)
         }
     }
 }
