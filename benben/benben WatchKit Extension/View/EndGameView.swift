@@ -34,7 +34,9 @@ struct EndGameView: View {
                 .frame(width: 62, height: 62)
                 .cornerRadius(360)
                 Spacer()
-                Button(action: {}) {
+                Button(action: {
+                    gameViewModel.state = .HOME
+                }) {
                     Image(systemName: "house.fill")
                         .resizable()
                         .frame(width: 40, height: 35)

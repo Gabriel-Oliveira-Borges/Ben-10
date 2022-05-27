@@ -16,6 +16,8 @@ struct GameView: View {
     
     var body: some View {
         switch gameViewModel.state {
+        case .HOME:
+            StartGameView(highScore: 30, gameViewModel: gameViewModel)
         case .PLAYING:
             Text(gameViewModel.currentAction.text)
         case .RIGHTACTION:

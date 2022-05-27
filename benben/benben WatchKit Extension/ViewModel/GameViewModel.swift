@@ -8,6 +8,7 @@
 import Foundation
 
 enum GameState {
+    case HOME
     case ENDED
     case PLAYING
     case RIGHTACTION
