@@ -8,7 +8,7 @@
 import Foundation
 import CoreMotion
 
-protocol ShakeObserverDelegate {
+protocol ShakeObserverDelegate: AnyObject {
     func onWatchShake(didShakeWith sensibility: ShakeSensibility, direction: ShakeDirection)
 
     func shakeObserverError()
@@ -16,7 +16,7 @@ protocol ShakeObserverDelegate {
 
 
 class ShakeObserver {
-    var delegate: ShakeObserverDelegate?
+    weak var delegate: ShakeObserverDelegate?
 
     private let motionManager = CMMotionManager()
     private let sensibility: ShakeSensibility
