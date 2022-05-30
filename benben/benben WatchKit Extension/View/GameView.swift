@@ -21,9 +21,9 @@ struct GameView: View {
         case .PLAYING:
             Text(gameViewModel.currentAction.text)
         case .RIGHTACTION:
-            RightActionView(actionFeedback: .right)
+            FeedbackActionView(actionFeedback: .right)
         case .WRONGACTION:
-            RightActionView(actionFeedback: .wrong)
+            FeedbackActionView(actionFeedback: .wrong)
         case .ENDED:
             EndGameView(endGameTitle: "Final score:", finalScore: 20, gameViewModel: gameViewModel)
         }

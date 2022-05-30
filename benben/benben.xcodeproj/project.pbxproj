@@ -11,7 +11,7 @@
 		DBD937EC283CFFB100AF00D9 /* LongPressActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD937EB283CFFB100AF00D9 /* LongPressActionModel.swift */; };
 		DBFE2054284116F100C4A34A /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFE2053284116F100C4A34A /* SoundManager.swift */; };
 		DBFE205D2841173800C4A34A /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBFE20572841173800C4A34A /* wrong.mp3 */; };
-		E80A1487283FB5B0009DE28B /* RightActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A1486283FB5B0009DE28B /* RightActionView.swift */; };
+		E80A1487283FB5B0009DE28B /* FeedbackActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A1486283FB5B0009DE28B /* FeedbackActionView.swift */; };
 		E80A148E28413662009DE28B /* StartGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A148D28413662009DE28B /* StartGameView.swift */; };
 		E8196D4D2836697E0076F3D6 /* benben WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E8196D52283669800076F3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8196D51283669800076F3D6 /* Assets.xcassets */; };
@@ -82,7 +82,7 @@
 		DBD937EB283CFFB100AF00D9 /* LongPressActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressActionModel.swift; sourceTree = "<group>"; };
 		DBFE2053284116F100C4A34A /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		DBFE20572841173800C4A34A /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
-		E80A1486283FB5B0009DE28B /* RightActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightActionView.swift; sourceTree = "<group>"; };
+		E80A1486283FB5B0009DE28B /* FeedbackActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackActionView.swift; sourceTree = "<group>"; };
 		E80A148D28413662009DE28B /* StartGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameView.swift; sourceTree = "<group>"; };
 		E8196D482836697E0076F3D6 /* benben.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benben.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "benben WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,7 +197,7 @@
 				E8196D5E283669800076F3D6 /* ContentView.swift */,
 				E8196D7B28366A700076F3D6 /* GameView.swift */,
 				E8E366E1283E783D00F415A9 /* EndGameView.swift */,
-				E80A1486283FB5B0009DE28B /* RightActionView.swift */,
+				E80A1486283FB5B0009DE28B /* FeedbackActionView.swift */,
 				E80A148D28413662009DE28B /* StartGameView.swift */,
 			);
 			path = View;
@@ -363,7 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8196D61283669800076F3D6 /* NotificationController.swift in Sources */,
-				E80A1487283FB5B0009DE28B /* RightActionView.swift in Sources */,
+				E80A1487283FB5B0009DE28B /* FeedbackActionView.swift in Sources */,
 				E8196D5F283669800076F3D6 /* ContentView.swift in Sources */,
 				E8196D89283683230076F3D6 /* SwipeActionModel.swift in Sources */,
 				DBD937EA283CFE1400AF00D9 /* TapActionModel.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  RightActionView.swift
+//  FeedbackActionView.swift
 //  benben WatchKit Extension
 //
 //  Created by Karen Lima on 26/05/22.
@@ -11,7 +11,7 @@ enum feedbackEnum {
     case right
     case wrong
 }
-struct RightActionView: View {
+struct FeedbackActionView: View {
     var actionFeedback: feedbackEnum
     var body: some View {
         GeometryReader { geometry in
@@ -43,6 +43,6 @@ struct RightActionView: View {
 
 struct RightActionView_Previews: PreviewProvider {
     static var previews: some View {
-        RightActionView(actionFeedback: .right)
+        FeedbackActionView(actionFeedback: .right)
     }
 }
