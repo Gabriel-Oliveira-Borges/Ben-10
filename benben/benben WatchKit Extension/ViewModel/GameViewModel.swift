@@ -7,13 +7,23 @@
 
 import Foundation
 
+enum GameState {
+    case HOME
+    case ENDED
+    case PLAYING
+    case RIGHTACTION
+    case WRONGACTION
+}
+
 class GameViewModel: ObservableObject {
     private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeActionModel(), TapAction(), LongPressAction()]
     private let soundEffectManager = SoundManager()
     @Published var currentAction: ActionModel
+    @Published var state: GameState
     
     init() {
         currentAction = actions.randomElement()!
+        state = .PLAYING
     }
     
     func startGame() {
@@ -34,10 +44,19 @@ extension GameViewModel: ActionDelegate {
         if (type == currentAction.type) {
             print("Correct Action")
             soundEffectManager.playSound(sound: .right)
-            nextAction()
+            state = .RIGHTACTION
+            Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+                self.state = .PLAYING
+                self.nextAction()
+            }
+            
         } else {
             print("Wrong Action")
+            state = .WRONGACTION
             soundEffectManager.playSound(sound: .wrong)
+            Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+                self.state = .ENDED
+            }
         }
     }
 }
