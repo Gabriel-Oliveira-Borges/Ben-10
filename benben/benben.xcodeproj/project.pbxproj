@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9165C253284651C3003EC392 /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9165C252284651C3003EC392 /* ScoreModel.swift */; };
 		DBD937EA283CFE1400AF00D9 /* TapActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */; };
 		E8196D4D2836697E0076F3D6 /* benben WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E8196D52283669800076F3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8196D51283669800076F3D6 /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9165C252284651C3003EC392 /* ScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
 		DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapActionModel.swift; sourceTree = "<group>"; };
 		E8196D482836697E0076F3D6 /* benben.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benben.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "benben WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +182,7 @@
 				E8196D8628366F0F0076F3D6 /* DigitalCrownActionModel.swift */,
 				E8196D88283683230076F3D6 /* SwipeActionModel.swift */,
 				DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */,
+				9165C252284651C3003EC392 /* ScoreModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8196D61283669800076F3D6 /* NotificationController.swift in Sources */,
+				9165C253284651C3003EC392 /* ScoreModel.swift in Sources */,
 				E8196D5F283669800076F3D6 /* ContentView.swift in Sources */,
 				E8196D89283683230076F3D6 /* SwipeActionModel.swift in Sources */,
 				DBD937EA283CFE1400AF00D9 /* TapActionModel.swift in Sources */,
