@@ -16,13 +16,33 @@ class SoundManager {
     enum SoundOption: String {
         case right = "right"
         case wrong = "wrong"
+        case back = "back"
+    }
+    
+    func playSound(sound: ActionType) {
+        playSound(sound: sound.rawValue)
     }
     
     func playSound(sound: SoundOption) {
-        guard let url = Bundle.main.url(forResource: sound.rawValue, withExtension: ".mp3") else { return }
+        playSound(sound: sound.rawValue)
+    }
+    
+    private func playSound(sound: String) {
+        guard let url = Bundle.main.url(forResource: sound, withExtension: ".mp3") else { return }
         do {
             player = try AVAudioPlayer(contentsOf: url)
+            if sound == "back" {
+                player?.volume = 0.1
+            }
             player?.play()
+        } catch let error {
+            print("Error.\(error.localizedDescription)")
+        }
+    }
+    
+    func stopSound() {
+        do {
+            player?.stop()
         } catch let error {
             print("Error.\(error.localizedDescription)")
         }

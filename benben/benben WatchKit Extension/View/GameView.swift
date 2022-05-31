@@ -17,10 +17,10 @@ struct GameView: View {
         case .HOME:
             StartGameView(highScore: 30, gameViewModel: gameViewModel)
         case .PLAYING:
-            //soundEffectManager.playSound(sound: gameViewModel.currentAction.sound)
             Text(actionText)
                 .onReceive(gameViewModel.$currentAction) { action in
                     actionText = action!.text
+                    soundEffectManager.playSound(sound: action!.type)
                 }
                 .font(.system(size: 24, weight: .semibold))
         case .RIGHTACTION:
