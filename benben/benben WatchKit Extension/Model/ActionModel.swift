@@ -15,6 +15,7 @@ enum ActionType {
     case SWIPE_DOWN
     case SWIPE_LEFT
     case SWIPE_RIGHT
+    case LONG_PRESS
 }
 
 protocol ActionDelegate {

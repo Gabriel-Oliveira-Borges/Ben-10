@@ -17,6 +17,9 @@ struct ContentView: View {
             .onTapGesture {
                 viewObserver.onTapDetected()
             }
+            .onLongPressGesture(perform: {
+                viewObserver.onLongPressDetected()
+            })
             .gesture(
                 DragGesture(minimumDistance: 20, coordinateSpace: .global)
                     .onEnded { value in
