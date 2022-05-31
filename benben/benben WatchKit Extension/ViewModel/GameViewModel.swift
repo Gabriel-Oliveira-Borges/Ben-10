@@ -7,16 +7,29 @@
 
 import Foundation
 
+enum GameState {
+    case HOME
+    case ENDED
+    case PLAYING
+    case RIGHTACTION
+    case WRONGACTION
+}
+
 class GameViewModel: ObservableObject {
-    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeActionModel(), TapAction(), PunchAction(), WatchDownAction(), WatchUpAction(), ShakeAction(), CelebrateAction()]
+    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), PunchAction(), WatchDownAction(), WatchUpAction(), ShakeAction(), CelebrateAction(), LongPressAction()]
     @Published var currentAction: ActionModel?
+    @Published var state: GameState = .HOME
+    private let soundEffectManager = SoundManager()
     
-    func startGame() {
+    init() {
         for var action in actions {
             action.delegate = self
         }
+    }
         
+    func startGame() {
         nextAction()
+        state = .PLAYING
     }
     
     private func stopGame() {
@@ -41,10 +54,21 @@ extension GameViewModel: ActionDelegate {
         print("Expected: \(currentAction!.type)")
         if (type == currentAction?.type) {
             print("Correct Action")
-            nextAction()
+            soundEffectManager.playSound(sound: .right)
+            state = .RIGHTACTION
+            Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+                self.state = .PLAYING
+                self.nextAction()
+            }
+            
         } else {
             print("Wrong Action")
             self.stopGame()
+            state = .WRONGACTION
+            soundEffectManager.playSound(sound: .wrong)
+            Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+                self.state = .ENDED
+            }
         }
     }
 }

@@ -11,12 +11,16 @@ import SwiftUI
 enum ActionType {
     case TAP
     case DIGITAL_CROWN
-    case SWIPE
     case PUNCH
     case WATCH_UP
     case WATCH_DOWN
     case SHAKE
     case CELEBRATION
+    case SWIPE_UP
+    case SWIPE_DOWN
+    case SWIPE_LEFT
+    case SWIPE_RIGHT
+    case LONG_PRESS
 }
 
 protocol ActionDelegate {

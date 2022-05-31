@@ -17,6 +17,14 @@
 		DB6E725D283FBB5500A8FF7E /* CelebrateAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E725C283FBB5500A8FF7E /* CelebrateAction.swift */; };
 		DBD937EA283CFE1400AF00D9 /* TapActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */; };
 		DBECC165283FA8D700094487 /* ShakeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECC164283FA8D700094487 /* ShakeAction.swift */; };
+		DB56EBBC2840063E003C7AF4 /* SwipeDownAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56EBBB2840063E003C7AF4 /* SwipeDownAction.swift */; };
+		DB56EBBE2840074E003C7AF4 /* SwipeLeftAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56EBBD2840074E003C7AF4 /* SwipeLeftAction.swift */; };
+		DB56EBC0284007C2003C7AF4 /* SwipeRightAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56EBBF284007C2003C7AF4 /* SwipeRightAction.swift */; };
+		DBD937EC283CFFB100AF00D9 /* LongPressActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD937EB283CFFB100AF00D9 /* LongPressActionModel.swift */; };
+		DBFE2054284116F100C4A34A /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFE2053284116F100C4A34A /* SoundManager.swift */; };
+		DBFE205D2841173800C4A34A /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBFE20572841173800C4A34A /* wrong.mp3 */; };
+		E80A1487283FB5B0009DE28B /* FeedbackActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A1486283FB5B0009DE28B /* FeedbackActionView.swift */; };
+		E80A148E28413662009DE28B /* StartGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A148D28413662009DE28B /* StartGameView.swift */; };
 		E8196D4D2836697E0076F3D6 /* benben WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E8196D52283669800076F3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8196D51283669800076F3D6 /* Assets.xcassets */; };
 		E8196D58283669800076F3D6 /* benben WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8196D57283669800076F3D6 /* benben WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -32,7 +40,11 @@
 		E8196D8228366B740076F3D6 /* ActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D8128366B740076F3D6 /* ActionModel.swift */; };
 		E8196D8528366DF70076F3D6 /* ViewObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D8428366DF70076F3D6 /* ViewObserver.swift */; };
 		E8196D8728366F0F0076F3D6 /* DigitalCrownActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D8628366F0F0076F3D6 /* DigitalCrownActionModel.swift */; };
-		E8196D89283683230076F3D6 /* SwipeActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D88283683230076F3D6 /* SwipeActionModel.swift */; };
+		E8196D89283683230076F3D6 /* SwipeUpAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D88283683230076F3D6 /* SwipeUpAction.swift */; };
+		E8B1F10B28450DCF003B4AE6 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8B1F10A28450DCF003B4AE6 /* right.mp3 */; };
+		E8B1F10C28450DCF003B4AE6 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8B1F10A28450DCF003B4AE6 /* right.mp3 */; };
+		E8B1F10D28450DCF003B4AE6 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8B1F10A28450DCF003B4AE6 /* right.mp3 */; };
+		E8E366E2283E783D00F415A9 /* EndGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E366E1283E783D00F415A9 /* EndGameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +100,14 @@
 		DB6E725C283FBB5500A8FF7E /* CelebrateAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrateAction.swift; sourceTree = "<group>"; };
 		DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapActionModel.swift; sourceTree = "<group>"; };
 		DBECC164283FA8D700094487 /* ShakeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeAction.swift; sourceTree = "<group>"; };
+		DB56EBBB2840063E003C7AF4 /* SwipeDownAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDownAction.swift; sourceTree = "<group>"; };
+		DB56EBBD2840074E003C7AF4 /* SwipeLeftAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeLeftAction.swift; sourceTree = "<group>"; };
+		DB56EBBF284007C2003C7AF4 /* SwipeRightAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeRightAction.swift; sourceTree = "<group>"; };
+		DBD937EB283CFFB100AF00D9 /* LongPressActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressActionModel.swift; sourceTree = "<group>"; };
+		DBFE2053284116F100C4A34A /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		DBFE20572841173800C4A34A /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
+		E80A1486283FB5B0009DE28B /* FeedbackActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackActionView.swift; sourceTree = "<group>"; };
+		E80A148D28413662009DE28B /* StartGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameView.swift; sourceTree = "<group>"; };
 		E8196D482836697E0076F3D6 /* benben.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benben.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "benben WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8196D51283669800076F3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,7 +126,9 @@
 		E8196D8128366B740076F3D6 /* ActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionModel.swift; sourceTree = "<group>"; };
 		E8196D8428366DF70076F3D6 /* ViewObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewObserver.swift; sourceTree = "<group>"; };
 		E8196D8628366F0F0076F3D6 /* DigitalCrownActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownActionModel.swift; sourceTree = "<group>"; };
-		E8196D88283683230076F3D6 /* SwipeActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionModel.swift; sourceTree = "<group>"; };
+		E8196D88283683230076F3D6 /* SwipeUpAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeUpAction.swift; sourceTree = "<group>"; };
+		E8B1F10A28450DCF003B4AE6 /* right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = right.mp3; sourceTree = "<group>"; };
+		E8E366E1283E783D00F415A9 /* EndGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +151,23 @@
 				DB44C4D6283E82C20004AB7E /* ShakeSensibility.swift */,
 			);
 			path = ShakeObserver;
+			sourceTree = "<group>";
+		};
+		DBFE2052284116D500C4A34A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DBFE2053284116F100C4A34A /* SoundManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DBFE20552841172900C4A34A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E8B1F10A28450DCF003B4AE6 /* right.mp3 */,
+				DBFE20572841173800C4A34A /* wrong.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		E8196D412836697E0076F3D6 = {
@@ -162,6 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				E8196D8328366DD10076F3D6 /* Observers */,
+				DBFE20552841172900C4A34A /* Sounds */,
+				DBFE2052284116D500C4A34A /* Services */,
 				E8196D8028366AE70076F3D6 /* Model */,
 				E8196D7D28366A8E0076F3D6 /* ViewModel */,
 				E8196D7A28366A430076F3D6 /* View */,
@@ -190,6 +231,9 @@
 			children = (
 				E8196D5E283669800076F3D6 /* ContentView.swift */,
 				E8196D7B28366A700076F3D6 /* GameView.swift */,
+				E8E366E1283E783D00F415A9 /* EndGameView.swift */,
+				E80A1486283FB5B0009DE28B /* FeedbackActionView.swift */,
+				E80A148D28413662009DE28B /* StartGameView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,13 +251,17 @@
 			children = (
 				E8196D8128366B740076F3D6 /* ActionModel.swift */,
 				E8196D8628366F0F0076F3D6 /* DigitalCrownActionModel.swift */,
-				E8196D88283683230076F3D6 /* SwipeActionModel.swift */,
+				E8196D88283683230076F3D6 /* SwipeUpAction.swift */,
+				DB56EBBB2840063E003C7AF4 /* SwipeDownAction.swift */,
+				DB56EBBD2840074E003C7AF4 /* SwipeLeftAction.swift */,
+				DB56EBBF284007C2003C7AF4 /* SwipeRightAction.swift */,
 				DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */,
 				DB44C4DC283E83850004AB7E /* PunchAction.swift */,
 				DB44C4D8283E82D60004AB7E /* WatchDownAction.swift */,
 				DB44C4DE283E839B0004AB7E /* WatchUpAction.swift */,
 				DBECC164283FA8D700094487 /* ShakeAction.swift */,
 				DB6E725C283FBB5500A8FF7E /* CelebrateAction.swift */,
+				DBD937EB283CFFB100AF00D9 /* LongPressActionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B1F10B28450DCF003B4AE6 /* right.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8196D52283669800076F3D6 /* Assets.xcassets in Resources */,
+				E8B1F10C28450DCF003B4AE6 /* right.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +392,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBFE205D2841173800C4A34A /* wrong.mp3 in Resources */,
+				E8B1F10D28450DCF003B4AE6 /* right.mp3 in Resources */,
 				E8196D6A283669810076F3D6 /* Preview Assets.xcassets in Resources */,
 				E8196D67283669810076F3D6 /* Assets.xcassets in Resources */,
 			);
@@ -355,18 +407,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8196D61283669800076F3D6 /* NotificationController.swift in Sources */,
+				E80A1487283FB5B0009DE28B /* FeedbackActionView.swift in Sources */,
 				E8196D5F283669800076F3D6 /* ContentView.swift in Sources */,
 				DB44C4DF283E839B0004AB7E /* WatchUpAction.swift in Sources */,
-				E8196D89283683230076F3D6 /* SwipeActionModel.swift in Sources */,
 				DB44C4D5283E82990004AB7E /* ShakeObserver.swift in Sources */,
 				DB44C4DD283E83850004AB7E /* PunchAction.swift in Sources */,
+				E8196D89283683230076F3D6 /* SwipeUpAction.swift in Sources */,
+				DB56EBC0284007C2003C7AF4 /* SwipeRightAction.swift in Sources */,
 				DBD937EA283CFE1400AF00D9 /* TapActionModel.swift in Sources */,
+				DBFE2054284116F100C4A34A /* SoundManager.swift in Sources */,
 				E8196D8728366F0F0076F3D6 /* DigitalCrownActionModel.swift in Sources */,
 				DB44C4D9283E82D60004AB7E /* WatchDownAction.swift in Sources */,
 				E8196D65283669800076F3D6 /* ComplicationController.swift in Sources */,
 				DBECC165283FA8D700094487 /* ShakeAction.swift in Sources */,
+				E8E366E2283E783D00F415A9 /* EndGameView.swift in Sources */,
+				E8196D65283669800076F3D6 /* ComplicationController.swift in Sources */,
+				E80A148E28413662009DE28B /* StartGameView.swift in Sources */,
 				E8196D8528366DF70076F3D6 /* ViewObserver.swift in Sources */,
 				E8196D8228366B740076F3D6 /* ActionModel.swift in Sources */,
+				DB56EBBC2840063E003C7AF4 /* SwipeDownAction.swift in Sources */,
+				DBD937EC283CFFB100AF00D9 /* LongPressActionModel.swift in Sources */,
 				E8196D5D283669800076F3D6 /* benbenApp.swift in Sources */,
 				E8196D7C28366A700076F3D6 /* GameView.swift in Sources */,
 				DB44C4D1283E82720004AB7E /* ShakeCoordinates.swift in Sources */,
@@ -375,6 +435,7 @@
 				DB6E725D283FBB5500A8FF7E /* CelebrateAction.swift in Sources */,
 				DB44C4D3283E82860004AB7E /* ShakeDirection.swift in Sources */,
 				E8196D7F28366ACA0076F3D6 /* GameViewModel.swift in Sources */,
+				DB56EBBE2840074E003C7AF4 /* SwipeLeftAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
