@@ -11,7 +11,10 @@ import SwiftUI
 enum ActionType {
     case TAP
     case DIGITAL_CROWN
-    case SWIPE
+    case SWIPE_UP
+    case SWIPE_DOWN
+    case SWIPE_LEFT
+    case SWIPE_RIGHT
     case LONG_PRESS
 }
 

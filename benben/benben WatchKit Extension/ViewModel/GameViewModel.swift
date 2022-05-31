@@ -16,10 +16,10 @@ enum GameState {
 }
 
 class GameViewModel: ObservableObject {
-    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeActionModel(), TapAction(), LongPressAction()]
-    private let soundEffectManager = SoundManager()
+    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), LongPressAction()]
     @Published var currentAction: ActionModel
     @Published var state: GameState
+    private let soundEffectManager = SoundManager()
     
     init() {
         currentAction = actions.randomElement()!
