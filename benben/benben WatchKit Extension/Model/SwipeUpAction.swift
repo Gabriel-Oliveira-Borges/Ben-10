@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-class SwipeActionModel: ActionModel, ViewObserverDelegate {
+class SwipeUpAction: ActionModel, ViewObserverDelegate {
     var viewObserver: ViewObserver = .newInstance
     
-    var type: ActionType = .SWIPE
+    var type: ActionType = .SWIPE_UP
     var delegate: ActionDelegate?
-    var text: String = "Swipe"
+    var text: String = "Swipe up"
     
     init() {
         viewObserver.addDelegate(self)
     }
     
     func didDetectViewInteraction(type: ActionType) {
-        if(type == .SWIPE) {
+        if(type == self.type) {
             self.delegate?.onDetected(type: self.type)
         }
     }
