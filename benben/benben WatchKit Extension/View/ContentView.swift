@@ -23,7 +23,23 @@ struct ContentView: View {
             .gesture(
                 DragGesture(minimumDistance: 20, coordinateSpace: .global)
                     .onEnded { value in
-                        viewObserver.onSwipeDetected()
+                        let horizontalAmount = value.translation.width as CGFloat
+                        let verticalAmount = value.translation.height as CGFloat
+                        
+                        if abs(horizontalAmount) > abs(verticalAmount) {
+                            if (horizontalAmount < 0) {
+                                viewObserver.onSwipeLeftDetected()
+                            } else {
+                                viewObserver.onSwipeRightDetected()
+                            }
+                            
+                        } else {
+                            if (verticalAmount < 0) {
+                                viewObserver.onSwipeUpDetected()
+                            } else {
+                                viewObserver.onSwipeDownDetected()
+                            }
+                        }
                     }
             )
     }

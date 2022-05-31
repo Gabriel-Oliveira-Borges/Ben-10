@@ -30,8 +30,20 @@ class ViewObserver {
         notifyDelegates(type: .TAP)
     }
     
-    func onSwipeDetected() {
-        notifyDelegates(type: .SWIPE)
+    func onSwipeUpDetected() {
+        notifyDelegates(type: .SWIPE_UP)
+    }
+    
+    func onSwipeDownDetected() {
+        notifyDelegates(type: .SWIPE_DOWN)
+    }
+    
+    func onSwipeLeftDetected() {
+        notifyDelegates(type: .SWIPE_LEFT)
+    }
+    
+    func onSwipeRightDetected() {
+        notifyDelegates(type: .SWIPE_RIGHT)
     }
     
     func onDigitalCrownDetected() {
