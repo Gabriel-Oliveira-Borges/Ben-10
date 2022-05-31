@@ -21,6 +21,7 @@ struct StartGameView: View {
             Spacer()
             Button {
                 gameViewModel.state = .PLAYING
+                gameViewModel.startGame()
             } label: {
                 Text("Start game!")
                     .foregroundColor(.black)

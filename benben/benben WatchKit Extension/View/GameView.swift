@@ -9,17 +9,16 @@ import SwiftUI
 
 struct GameView: View {
     @ObservedObject var gameViewModel: GameViewModel = GameViewModel()
-    
-    init() {
-        gameViewModel.startGame()
-    }
+    @State var actionText: String = ""
     
     var body: some View {
         switch gameViewModel.state {
         case .HOME:
             StartGameView(highScore: 30, gameViewModel: gameViewModel)
         case .PLAYING:
-            Text(gameViewModel.currentAction.text)
+            Text(actionText).onReceive(gameViewModel.$currentAction) { action in
+                actionText = action!.text
+            }
         case .RIGHTACTION:
             FeedbackActionView(actionFeedback: .right)
         case .WRONGACTION:
