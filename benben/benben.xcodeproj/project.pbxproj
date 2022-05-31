@@ -32,6 +32,7 @@
 		E8196D8528366DF70076F3D6 /* ViewObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D8428366DF70076F3D6 /* ViewObserver.swift */; };
 		E8196D8728366F0F0076F3D6 /* DigitalCrownActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D8628366F0F0076F3D6 /* DigitalCrownActionModel.swift */; };
 		E8196D89283683230076F3D6 /* SwipeUpAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D88283683230076F3D6 /* SwipeUpAction.swift */; };
+		E83B95912846514D00EFE394 /* TimerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83B95902846514D00EFE394 /* TimerProvider.swift */; };
 		E8B1F10B28450DCF003B4AE6 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8B1F10A28450DCF003B4AE6 /* right.mp3 */; };
 		E8B1F10C28450DCF003B4AE6 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8B1F10A28450DCF003B4AE6 /* right.mp3 */; };
 		E8B1F10D28450DCF003B4AE6 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8B1F10A28450DCF003B4AE6 /* right.mp3 */; };
@@ -109,6 +110,7 @@
 		E8196D8428366DF70076F3D6 /* ViewObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewObserver.swift; sourceTree = "<group>"; };
 		E8196D8628366F0F0076F3D6 /* DigitalCrownActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownActionModel.swift; sourceTree = "<group>"; };
 		E8196D88283683230076F3D6 /* SwipeUpAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeUpAction.swift; sourceTree = "<group>"; };
+		E83B95902846514D00EFE394 /* TimerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerProvider.swift; sourceTree = "<group>"; };
 		E8B1F10A28450DCF003B4AE6 /* right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = right.mp3; sourceTree = "<group>"; };
 		E8E366E1283E783D00F415A9 /* EndGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				DBFE2053284116F100C4A34A /* SoundManager.swift */,
+				E83B95902846514D00EFE394 /* TimerProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				DB56EBC0284007C2003C7AF4 /* SwipeRightAction.swift in Sources */,
 				DBD937EA283CFE1400AF00D9 /* TapActionModel.swift in Sources */,
 				DBFE2054284116F100C4A34A /* SoundManager.swift in Sources */,
+				E83B95912846514D00EFE394 /* TimerProvider.swift in Sources */,
 				E8196D8728366F0F0076F3D6 /* DigitalCrownActionModel.swift in Sources */,
 				E8E366E2283E783D00F415A9 /* EndGameView.swift in Sources */,
 				E8196D65283669800076F3D6 /* ComplicationController.swift in Sources */,
