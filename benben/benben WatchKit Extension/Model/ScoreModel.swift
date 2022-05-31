@@ -27,8 +27,7 @@ class ScoreModel{
     
     //setCounter(change: 1)
     
-    func updateScore(){
-        counter = counter + 1
+    func updateMaxScore(){
         if(counter > userDefaults.integer(forKey: "maxScore")){
             userDefaults.set(counter, forKey: "maxScore")
     }

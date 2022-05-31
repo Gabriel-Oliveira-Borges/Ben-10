@@ -30,6 +30,7 @@ struct benbenApp: App {
                 ZStack{
                 VStack {
                     ContentView()
+                        .focusable()
                         .digitalCrownRotation(
                             $crownRotation,
                             from: 0,

@@ -40,9 +40,10 @@ extension GameViewModel: ActionDelegate {
         print("Expected: \(currentAction.type)")
         if (type == currentAction.type) {
             print("Correct Action")
-            ScoreGame.updateScore()
+            ScoreGame.setCounter(change: 1)
             nextAction()
         } else {
+            ScoreGame.updateMaxScore()
             print("Wrong Action")
         }
     }
