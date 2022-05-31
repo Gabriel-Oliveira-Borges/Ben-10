@@ -19,7 +19,7 @@ class SwipeRightAction: ActionModel, ViewObserverDelegate {
     }
     
     func didDetectViewInteraction(type: ActionType) {
-        if(type == .SWIPE_RIGHT) {
+        if(type == self.type) {
             self.delegate?.onDetected(type: self.type)
         }
     }

@@ -19,7 +19,7 @@ class SwipeUpAction: ActionModel, ViewObserverDelegate {
     }
     
     func didDetectViewInteraction(type: ActionType) {
-        if(type == .SWIPE_UP) {
+        if(type == self.type) {
             self.delegate?.onDetected(type: self.type)
         }
     }
