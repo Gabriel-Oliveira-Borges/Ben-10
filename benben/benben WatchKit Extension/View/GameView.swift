@@ -9,9 +9,9 @@ import SwiftUI
 
 struct GameView: View {
     @ObservedObject var gameViewModel: GameViewModel = GameViewModel()
-    
+    private let soundEffectManager = SoundManager()
     init() {
-        gameViewModel.startGame()
+        gameViewModel.state = .HOME
     }
     
     var body: some View {
@@ -20,6 +20,8 @@ struct GameView: View {
             StartGameView(highScore: 30, gameViewModel: gameViewModel)
         case .PLAYING:
             Text(gameViewModel.currentAction.text)
+                .font(.system(size: 24, weight: .semibold))
+            //soundEffectManager.playSound(sound: gameViewModel.currentAction.sound)
         case .RIGHTACTION:
             FeedbackActionView(actionFeedback: .right)
         case .WRONGACTION:

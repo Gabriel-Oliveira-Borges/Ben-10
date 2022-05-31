@@ -12,7 +12,7 @@ class SwipeActionModel: ActionModel, ViewObserverDelegate {
     
     var type: ActionType = .SWIPE
     var delegate: ActionDelegate?
-    var text: String = "Swipe"
+    var text: String = "Swipe!"
     
     init() {
         viewObserver.addDelegate(self)
