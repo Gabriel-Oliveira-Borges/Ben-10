@@ -19,6 +19,7 @@ class GameViewModel: ObservableObject {
     private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), LongPressAction()]
     @Published var currentAction: ActionModel
     @Published var state: GameState
+    private let soundEffectManager = SoundManager()
     
     init() {
         currentAction = actions.randomElement()!
