@@ -10,9 +10,11 @@ import Foundation
 class GameViewModel: ObservableObject {
     private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeActionModel(), TapAction()]
     @Published var currentAction: ActionModel
+    @Published var currentTimer: Timer
     
     init() {
         currentAction = actions.randomElement()!
+        currentTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     }
     
     func startGame() {
