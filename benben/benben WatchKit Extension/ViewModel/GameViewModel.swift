@@ -16,23 +16,35 @@ enum GameState {
 }
 
 class GameViewModel: ObservableObject {
-    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), LongPressAction()]
+
+    @Published var remainingTimeFraction: Float = 1
     @Published var currentAction: ActionModel?
     @Published var state: GameState = .HOME
     @Published var score: Int = 0
+
     private let userDefaults = UserDefaultsManager()
     private let soundEffectManager = SoundManager()
-    
-    init() {
+    private let timer = TimerProvider(totalTime: 5)
+    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), PunchAction(), WatchDownAction(), WatchUpAction(), ShakeAction(), CelebrateAction(), LongPressAction()]
+        
+    func startGame() {
         for var action in actions {
             action.delegate = self
         }
-    }
-        
-    func startGame() {
         score = 0
         nextAction()
         state = .PLAYING
+        timer.start()
+    }
+    
+    func getTimerPublisher() -> Timer.TimerPublisher {
+        return timer.publisher
+    }
+    
+    func updateRemainingTime() {
+        timer.uptadeRemainingTime()
+        remainingTimeFraction = 1 - (((Float(timer.totalTime)  - Float(timer.remainingTime!))/Float(timer.totalTime)))
+
     }
     
     private func stopGame() {
@@ -47,8 +59,6 @@ class GameViewModel: ObservableObject {
         (currentAction as? ShakeActionModel)?.startDetection()
     }
 }
-
-    
 
 extension GameViewModel: ActionDelegate {
     internal func onDetected(type: ActionType) {

@@ -13,12 +13,12 @@ class TimerProvider: ObservableObject {
     @Published var remainingTime: Int?
     @Published var isRunning: Bool = false
     
-    private let totalTime: Int
     private var subscription: Cancellable? = nil
     
+    public let totalTime: Int
     public var publisher = Timer.TimerPublisher(interval: 1.0, runLoop: .main, mode: .common)
     
-    init(with totalTime: Int) {
+    init(totalTime: Int) {
         self.totalTime = totalTime
         self.remainingTime = totalTime
     }
@@ -44,12 +44,10 @@ class TimerProvider: ObservableObject {
     }
     
     func uptadeRemainingTime() {
-        guard var remainingTime = remainingTime else { return }
-
-        if remainingTime < 1 {
+        if remainingTime! < 1 {
             self.restart()
         } else {
-            remainingTime = remainingTime - 1
+            remainingTime = remainingTime! - 1
         }
     }
     

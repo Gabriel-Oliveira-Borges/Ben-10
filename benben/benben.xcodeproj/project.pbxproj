@@ -190,7 +190,6 @@
 			children = (
 				9165C252284651C3003EC392 /* UserDefaultsManager.swift */,
 				DBFE2053284116F100C4A34A /* SoundManager.swift */,
-				E83B95902846514D00EFE394 /* TimerProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -300,6 +299,7 @@
 		E8196D7A28366A430076F3D6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E83B95902846514D00EFE394 /* TimerProvider.swift */,
 				E8196D5E283669800076F3D6 /* ContentView.swift */,
 				E8196D7B28366A700076F3D6 /* GameView.swift */,
 				E8E366E1283E783D00F415A9 /* EndGameView.swift */,
