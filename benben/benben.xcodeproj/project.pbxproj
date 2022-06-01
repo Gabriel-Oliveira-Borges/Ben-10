@@ -27,7 +27,20 @@
 		DBFE205D2841173800C4A34A /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBFE20572841173800C4A34A /* wrong.mp3 */; };
 		E80A1487283FB5B0009DE28B /* FeedbackActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A1486283FB5B0009DE28B /* FeedbackActionView.swift */; };
 		E80A148E28413662009DE28B /* StartGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A148D28413662009DE28B /* StartGameView.swift */; };
-		E8196D4D2836697E0076F3D6 /* benben WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E80A14B92847A9C8009DE28B /* watch_down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14AD2847A9C8009DE28B /* watch_down.mp3 */; };
+		E80A14BA2847A9C8009DE28B /* watch_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14AE2847A9C8009DE28B /* watch_up.mp3 */; };
+		E80A14BB2847A9C8009DE28B /* shake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14AF2847A9C8009DE28B /* shake.mp3 */; };
+		E80A14BC2847A9C8009DE28B /* punch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14B02847A9C8009DE28B /* punch.mp3 */; };
+		E80A14BD2847A9C8009DE28B /* spin_crown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14B12847A9C8009DE28B /* spin_crown.mp3 */; };
+		E80A14BE2847A9C8009DE28B /* swipe_down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14B22847A9C8009DE28B /* swipe_down.mp3 */; };
+		E80A14BF2847A9C8009DE28B /* swipe_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14B32847A9C8009DE28B /* swipe_up.mp3 */; };
+		E80A14C02847A9C8009DE28B /* swipe_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14B42847A9C8009DE28B /* swipe_left.mp3 */; };
+		E80A14C12847A9C8009DE28B /* tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14B52847A9C8009DE28B /* tap.mp3 */; };
+		E80A14C22847A9C8009DE28B /* press_hold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14B62847A9C8009DE28B /* press_hold.mp3 */; };
+		E80A14C32847A9C8009DE28B /* celebration.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14B72847A9C8009DE28B /* celebration.mp3 */; };
+		E80A14C42847A9C8009DE28B /* swipe_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14B82847A9C8009DE28B /* swipe_right.mp3 */; };
+		E80A14C62847AA46009DE28B /* back.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14C52847AA46009DE28B /* back.mp3 */; };
+		E8196D4D2836697E0076F3D6 /* Hit It!.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8196D4C2836697E0076F3D6 /* Hit It!.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E8196D52283669800076F3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8196D51283669800076F3D6 /* Assets.xcassets */; };
 		E8196D58283669800076F3D6 /* benben WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8196D57283669800076F3D6 /* benben WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E8196D5D283669800076F3D6 /* benbenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D5C283669800076F3D6 /* benbenApp.swift */; };
@@ -85,7 +98,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				E8196D4D2836697E0076F3D6 /* benben WatchKit App.app in Embed Watch Content */,
+				E8196D4D2836697E0076F3D6 /* Hit It!.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,8 +126,21 @@
 		DBFE20572841173800C4A34A /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
 		E80A1486283FB5B0009DE28B /* FeedbackActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackActionView.swift; sourceTree = "<group>"; };
 		E80A148D28413662009DE28B /* StartGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameView.swift; sourceTree = "<group>"; };
-		E8196D482836697E0076F3D6 /* benben.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benben.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "benben WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80A14AD2847A9C8009DE28B /* watch_down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = watch_down.mp3; sourceTree = "<group>"; };
+		E80A14AE2847A9C8009DE28B /* watch_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = watch_up.mp3; sourceTree = "<group>"; };
+		E80A14AF2847A9C8009DE28B /* shake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shake.mp3; sourceTree = "<group>"; };
+		E80A14B02847A9C8009DE28B /* punch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = punch.mp3; sourceTree = "<group>"; };
+		E80A14B12847A9C8009DE28B /* spin_crown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spin_crown.mp3; sourceTree = "<group>"; };
+		E80A14B22847A9C8009DE28B /* swipe_down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swipe_down.mp3; sourceTree = "<group>"; };
+		E80A14B32847A9C8009DE28B /* swipe_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swipe_up.mp3; sourceTree = "<group>"; };
+		E80A14B42847A9C8009DE28B /* swipe_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swipe_left.mp3; sourceTree = "<group>"; };
+		E80A14B52847A9C8009DE28B /* tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tap.mp3; sourceTree = "<group>"; };
+		E80A14B62847A9C8009DE28B /* press_hold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = press_hold.mp3; sourceTree = "<group>"; };
+		E80A14B72847A9C8009DE28B /* celebration.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = celebration.mp3; sourceTree = "<group>"; };
+		E80A14B82847A9C8009DE28B /* swipe_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swipe_right.mp3; sourceTree = "<group>"; };
+		E80A14C52847AA46009DE28B /* back.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = back.mp3; sourceTree = "<group>"; };
+		E8196D482836697E0076F3D6 /* Hit It!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hit It!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8196D4C2836697E0076F3D6 /* Hit It!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hit It!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8196D51283669800076F3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8196D57283669800076F3D6 /* benben WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "benben WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8196D5C283669800076F3D6 /* benbenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benbenApp.swift; sourceTree = "<group>"; };
@@ -171,16 +197,45 @@
 		DBFE20552841172900C4A34A /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				E80A148F28463C98009DE28B /* ActionSounds */,
-				E8B1F10A28450DCF003B4AE6 /* right.mp3 */,
-				DBFE20572841173800C4A34A /* wrong.mp3 */,
+				E80A14AC2847A973009DE28B /* ActionSounds */,
+				E80A14A928465AE9009DE28B /* Background */,
+				E80A14A828465AD4009DE28B /* Feedback */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
 		};
-		E80A148F28463C98009DE28B /* ActionSounds */ = {
+		E80A14A828465AD4009DE28B /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
+				E8B1F10A28450DCF003B4AE6 /* right.mp3 */,
+				DBFE20572841173800C4A34A /* wrong.mp3 */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		E80A14A928465AE9009DE28B /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				E80A14C52847AA46009DE28B /* back.mp3 */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		E80A14AC2847A973009DE28B /* ActionSounds */ = {
+			isa = PBXGroup;
+			children = (
+				E80A14B72847A9C8009DE28B /* celebration.mp3 */,
+				E80A14B62847A9C8009DE28B /* press_hold.mp3 */,
+				E80A14B02847A9C8009DE28B /* punch.mp3 */,
+				E80A14AF2847A9C8009DE28B /* shake.mp3 */,
+				E80A14B12847A9C8009DE28B /* spin_crown.mp3 */,
+				E80A14B22847A9C8009DE28B /* swipe_down.mp3 */,
+				E80A14B42847A9C8009DE28B /* swipe_left.mp3 */,
+				E80A14B82847A9C8009DE28B /* swipe_right.mp3 */,
+				E80A14B32847A9C8009DE28B /* swipe_up.mp3 */,
+				E80A14B52847A9C8009DE28B /* tap.mp3 */,
+				E80A14AD2847A9C8009DE28B /* watch_down.mp3 */,
+				E80A14AE2847A9C8009DE28B /* watch_up.mp3 */,
 			);
 			path = ActionSounds;
 			sourceTree = "<group>";
@@ -197,8 +252,8 @@
 		E8196D492836697E0076F3D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E8196D482836697E0076F3D6 /* benben.app */,
-				E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */,
+				E8196D482836697E0076F3D6 /* Hit It!.app */,
+				E8196D4C2836697E0076F3D6 /* Hit It!.app */,
 				E8196D57283669800076F3D6 /* benben WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -309,7 +364,7 @@
 			);
 			name = benben;
 			productName = benben;
-			productReference = E8196D482836697E0076F3D6 /* benben.app */;
+			productReference = E8196D482836697E0076F3D6 /* Hit It!.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		E8196D4B2836697E0076F3D6 /* benben WatchKit App */ = {
@@ -326,7 +381,7 @@
 			);
 			name = "benben WatchKit App";
 			productName = "benben WatchKit App";
-			productReference = E8196D4C2836697E0076F3D6 /* benben WatchKit App.app */;
+			productReference = E8196D4C2836697E0076F3D6 /* Hit It!.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		E8196D56283669800076F3D6 /* benben WatchKit Extension */ = {
@@ -409,10 +464,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E80A14B92847A9C8009DE28B /* watch_down.mp3 in Resources */,
+				E80A14BA2847A9C8009DE28B /* watch_up.mp3 in Resources */,
+				E80A14BF2847A9C8009DE28B /* swipe_up.mp3 in Resources */,
+				E80A14BD2847A9C8009DE28B /* spin_crown.mp3 in Resources */,
 				DBFE205D2841173800C4A34A /* wrong.mp3 in Resources */,
+				E80A14C32847A9C8009DE28B /* celebration.mp3 in Resources */,
+				E80A14BB2847A9C8009DE28B /* shake.mp3 in Resources */,
 				E8B1F10D28450DCF003B4AE6 /* right.mp3 in Resources */,
 				E8196D6A283669810076F3D6 /* Preview Assets.xcassets in Resources */,
 				E8196D67283669810076F3D6 /* Assets.xcassets in Resources */,
+				E80A14BC2847A9C8009DE28B /* punch.mp3 in Resources */,
+				E80A14C62847AA46009DE28B /* back.mp3 in Resources */,
+				E80A14C12847A9C8009DE28B /* tap.mp3 in Resources */,
+				E80A14C22847A9C8009DE28B /* press_hold.mp3 in Resources */,
+				E80A14C02847A9C8009DE28B /* swipe_left.mp3 in Resources */,
+				E80A14BE2847A9C8009DE28B /* swipe_down.mp3 in Resources */,
+				E80A14C42847A9C8009DE28B /* swipe_right.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,8 +666,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "benben WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "benben WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CFBundleDisplayName = "Hit It!";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = benben_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -630,8 +698,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "benben WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "benben WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CFBundleDisplayName = "Hit It!";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = benben_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -662,11 +730,10 @@
 				DEVELOPMENT_TEAM = N5WF5ZGHK4;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = benben_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "benben WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.karenbaliero.benben.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hit It!";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -687,11 +754,10 @@
 				DEVELOPMENT_TEAM = N5WF5ZGHK4;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = benben_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "benben WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.karenbaliero.benben.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hit It!";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -706,10 +772,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hit It!";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.karenbaliero.benben;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hit It!";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -719,10 +786,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hit It!";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.karenbaliero.benben;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hit It!";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

@@ -8,19 +8,19 @@
 import Foundation
 import SwiftUI
 
-enum ActionType {
-    case TAP
-    case DIGITAL_CROWN
-    case PUNCH
-    case WATCH_UP
-    case WATCH_DOWN
-    case SHAKE
-    case CELEBRATION
-    case SWIPE_UP
-    case SWIPE_DOWN
-    case SWIPE_LEFT
-    case SWIPE_RIGHT
-    case LONG_PRESS
+enum ActionType: String {
+    case TAP = "tap"
+    case DIGITAL_CROWN = "spin_crown"
+    case PUNCH = "punch"
+    case WATCH_UP = "watch_up"
+    case WATCH_DOWN = "watch_down"
+    case SHAKE = "shake"
+    case CELEBRATION = "celebration"
+    case SWIPE_UP = "swipe_up"
+    case SWIPE_DOWN = "swipe_down"
+    case SWIPE_LEFT = "swipe_left"
+    case SWIPE_RIGHT = "swipe_right"
+    case LONG_PRESS = "press_hold"
 }
 
 protocol ActionDelegate {

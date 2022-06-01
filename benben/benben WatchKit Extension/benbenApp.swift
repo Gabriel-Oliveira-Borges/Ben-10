@@ -11,6 +11,9 @@ import Combine
 @main
 struct benbenApp: App {
     @State private var crownRotation: Double = 0
+    @Environment(\.scenePhase) private var scenePhase
+    private let soundBackManager = SoundManager()
+    
     
     private var viewObserver = ViewObserver.newInstance
     
@@ -22,6 +25,7 @@ struct benbenApp: App {
             .removeDuplicates()
             .debounce(for: 0.1, scheduler: RunLoop.main)
             .eraseToAnyPublisher()
+        soundBackManager.playSound(sound: .back)
     }
 
     @SceneBuilder var body: some Scene {
@@ -45,6 +49,14 @@ struct benbenApp: App {
                         }.onReceive(debouncedPublisher, perform: { digitalCrownValue in
                             self.viewObserver.onDigitalCrownDetected()
                         })
+                        .onChange(of: scenePhase) { phase in
+                            if phase == .active {
+                                soundBackManager.playSound(sound: .back)
+                            } else {
+                                soundBackManager.stopSound()
+
+                            }
+                        }
                 }
                     
                 }
