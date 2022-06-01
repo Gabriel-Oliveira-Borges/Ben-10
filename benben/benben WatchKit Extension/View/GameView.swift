@@ -14,12 +14,8 @@ struct GameView: View {
         switch gameViewModel.state {
         case .HOME:
             StartGameView(gameViewModel: gameViewModel)
-        case .PLAYING:
+        case .PLAYING, .WRONGACTION, .RIGHTACTION:
             ActionView(gameViewModel: gameViewModel)
-        case .RIGHTACTION:
-            FeedbackActionView(actionFeedback: .right)
-        case .WRONGACTION:
-            FeedbackActionView(actionFeedback: .wrong)
         case .ENDED:
             EndGameView(gameViewModel: gameViewModel)
         }
