@@ -27,6 +27,7 @@ struct benbenApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
+                ZStack{
                 VStack {
                     ContentView()
                         .focusable()
@@ -44,6 +45,8 @@ struct benbenApp: App {
                         }.onReceive(debouncedPublisher, perform: { digitalCrownValue in
                             self.viewObserver.onDigitalCrownDetected()
                         })
+                }
+                    
                 }
             }
         }

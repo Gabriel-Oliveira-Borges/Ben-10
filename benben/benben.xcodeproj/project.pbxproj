@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		82645C0B284658BD00EA38EA /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82645C0A284658BD00EA38EA /* ActionView.swift */; };
+		9165C253284651C3003EC392 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9165C252284651C3003EC392 /* UserDefaultsManager.swift */; };
 		DB44C4D1283E82720004AB7E /* ShakeCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D0283E82720004AB7E /* ShakeCoordinates.swift */; };
 		DB44C4D3283E82860004AB7E /* ShakeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D2283E82860004AB7E /* ShakeDirection.swift */; };
 		DB44C4D5283E82990004AB7E /* ShakeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D4283E82990004AB7E /* ShakeObserver.swift */; };
@@ -93,6 +94,7 @@
 
 /* Begin PBXFileReference section */
 		82645C0A284658BD00EA38EA /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		9165C252284651C3003EC392 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		DB44C4D0283E82720004AB7E /* ShakeCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeCoordinates.swift; sourceTree = "<group>"; };
 		DB44C4D2283E82860004AB7E /* ShakeDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDirection.swift; sourceTree = "<group>"; };
 		DB44C4D4283E82990004AB7E /* ShakeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeObserver.swift; sourceTree = "<group>"; };
@@ -160,8 +162,8 @@
 		DBFE2052284116D500C4A34A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9165C252284651C3003EC392 /* UserDefaultsManager.swift */,
 				DBFE2053284116F100C4A34A /* SoundManager.swift */,
-				E83B95902846514D00EFE394 /* TimerProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -169,10 +171,18 @@
 		DBFE20552841172900C4A34A /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				E80A148F28463C98009DE28B /* ActionSounds */,
 				E8B1F10A28450DCF003B4AE6 /* right.mp3 */,
 				DBFE20572841173800C4A34A /* wrong.mp3 */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		E80A148F28463C98009DE28B /* ActionSounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ActionSounds;
 			sourceTree = "<group>";
 		};
 		E8196D412836697E0076F3D6 = {
@@ -234,6 +244,7 @@
 		E8196D7A28366A430076F3D6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E83B95902846514D00EFE394 /* TimerProvider.swift */,
 				E8196D5E283669800076F3D6 /* ContentView.swift */,
 				E8196D7B28366A700076F3D6 /* GameView.swift */,
 				E8E366E1283E783D00F415A9 /* EndGameView.swift */,
@@ -413,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8196D61283669800076F3D6 /* NotificationController.swift in Sources */,
+				9165C253284651C3003EC392 /* UserDefaultsManager.swift in Sources */,
 				E80A1487283FB5B0009DE28B /* FeedbackActionView.swift in Sources */,
 				E8196D5F283669800076F3D6 /* ContentView.swift in Sources */,
 				DB44C4DF283E839B0004AB7E /* WatchUpAction.swift in Sources */,

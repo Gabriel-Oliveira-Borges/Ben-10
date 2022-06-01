@@ -12,7 +12,7 @@ class SwipeRightAction: ActionModel, ViewObserverDelegate {
     
     var type: ActionType = .SWIPE_RIGHT
     var delegate: ActionDelegate?
-    var text: String = "Swipe right"
+    var text: String = "Swipe right!"
     
     init() {
         viewObserver.addDelegate(self)

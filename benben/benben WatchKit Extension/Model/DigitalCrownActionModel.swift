@@ -11,7 +11,7 @@ class DigitalCrownActionModel: ActionModel, ViewObserverDelegate {
     var viewObserver: ViewObserver = .newInstance
     var type: ActionType = .DIGITAL_CROWN
     var delegate: ActionDelegate?
-    var text: String = "Gire!"
+    var text: String = "Spin the crown!"
     
     init() {
         viewObserver.addDelegate(self)

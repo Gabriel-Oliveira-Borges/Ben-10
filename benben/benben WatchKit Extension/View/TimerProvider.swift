@@ -28,7 +28,7 @@ class TimerProvider: ObservableObject {
         self.isRunning = true
     }
     
-    func reestart() {
+    func restart() {
         guard var remainingTime = remainingTime else { return }
 
         self.cancel()
@@ -45,7 +45,7 @@ class TimerProvider: ObservableObject {
     
     func uptadeRemainingTime() {
         if remainingTime! < 1 {
-            self.reestart()
+            self.restart()
         } else {
             remainingTime = remainingTime! - 1
         }
