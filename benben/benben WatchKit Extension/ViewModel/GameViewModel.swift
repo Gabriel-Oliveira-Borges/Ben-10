@@ -16,9 +16,11 @@ enum GameState {
 }
 
 class GameViewModel: ObservableObject {
-    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), PunchAction(), WatchDownAction(), WatchUpAction(), ShakeAction(), CelebrateAction(), LongPressAction()]
+    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), LongPressAction()]
     @Published var currentAction: ActionModel?
     @Published var state: GameState = .HOME
+    @Published var score: Int = 0
+    private let userDefaults = UserDefaultsManager()
     private let soundEffectManager = SoundManager()
     
     init() {
@@ -28,6 +30,7 @@ class GameViewModel: ObservableObject {
     }
         
     func startGame() {
+        score = 0
         nextAction()
         state = .PLAYING
     }
@@ -45,6 +48,8 @@ class GameViewModel: ObservableObject {
     }
 }
 
+    
+
 extension GameViewModel: ActionDelegate {
     internal func onDetected(type: ActionType) {
         print("")
@@ -54,6 +59,7 @@ extension GameViewModel: ActionDelegate {
         print("Expected: \(currentAction!.type)")
         if (type == currentAction?.type) {
             print("Correct Action")
+            score += 1
             soundEffectManager.playSound(sound: .right)
             state = .RIGHTACTION
             Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
@@ -62,6 +68,7 @@ extension GameViewModel: ActionDelegate {
             }
             
         } else {
+            userDefaults.setMaxScoreIfNeeded(score)
             print("Wrong Action")
             self.stopGame()
             state = .WRONGACTION
