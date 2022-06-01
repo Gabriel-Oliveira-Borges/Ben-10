@@ -44,6 +44,7 @@ struct ActionView: View {
                     Text("\(gameViewModel.score)")
                     .font(.system(size: 19, weight: .light))
                 }
+            }
         }
         .onAppear {
             if gameViewModel.state == .WRONGACTION {
@@ -56,8 +57,10 @@ struct ActionView: View {
             
         }
         .offset(x: 0, y: 10)
+                
+        
     }
-    
+        
 
 }
 
