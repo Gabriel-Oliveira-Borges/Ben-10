@@ -33,6 +33,7 @@ class SoundManager {
             player = try AVAudioPlayer(contentsOf: url)
             if sound == "back" {
                 player?.volume = 0.1
+                player?.numberOfLoops = -1
             }
             player?.play()
         } catch let error {
