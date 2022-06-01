@@ -37,7 +37,7 @@ struct EndGameView: View {
             Spacer()
             HStack {
                 Button(action: {
-                    gameViewModel.state = .PLAYING
+                    gameViewModel.startGame()
                 }) {
                     Image(systemName: "arrow.counterclockwise")
                         .resizable()

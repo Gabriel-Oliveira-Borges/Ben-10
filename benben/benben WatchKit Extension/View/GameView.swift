@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GameView: View {
     @ObservedObject var gameViewModel: GameViewModel = GameViewModel()
-    
+    var soundManager = SoundManager()
     var body: some View {
         switch gameViewModel.state {
         case .HOME:

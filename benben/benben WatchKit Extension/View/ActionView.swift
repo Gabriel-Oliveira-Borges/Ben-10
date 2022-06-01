@@ -10,7 +10,7 @@ import SwiftUI
 struct ActionView: View {
     @ObservedObject var gameViewModel: GameViewModel
     @State var actionText: String = ""
-    
+    private let soundEffectManager = SoundManager()
     var body: some View {
         ZStack{
             Circle()
@@ -29,7 +29,12 @@ struct ActionView: View {
                 .font(.system(size: 19, weight: .light))
             }
         }
+        .onAppear {
+            soundEffectManager.playSound(sound: gameViewModel.currentAction!.type)
+        }
     }
+    
+
 }
 
 struct ActionView_Previews: PreviewProvider {
