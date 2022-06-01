@@ -31,6 +31,7 @@ struct benbenApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
+                ZStack{
                 VStack {
                     ContentView()
                         .focusable()
@@ -56,6 +57,8 @@ struct benbenApp: App {
 
                             }
                         }
+                }
+                    
                 }
             }
         }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82645C0B284658BD00EA38EA /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82645C0A284658BD00EA38EA /* ActionView.swift */; };
+		9165C253284651C3003EC392 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9165C252284651C3003EC392 /* UserDefaultsManager.swift */; };
 		DB44C4D1283E82720004AB7E /* ShakeCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D0283E82720004AB7E /* ShakeCoordinates.swift */; };
 		DB44C4D3283E82860004AB7E /* ShakeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D2283E82860004AB7E /* ShakeDirection.swift */; };
 		DB44C4D5283E82990004AB7E /* ShakeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D4283E82990004AB7E /* ShakeObserver.swift */; };
@@ -54,6 +56,7 @@
 		E8196D8528366DF70076F3D6 /* ViewObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D8428366DF70076F3D6 /* ViewObserver.swift */; };
 		E8196D8728366F0F0076F3D6 /* DigitalCrownActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D8628366F0F0076F3D6 /* DigitalCrownActionModel.swift */; };
 		E8196D89283683230076F3D6 /* SwipeUpAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8196D88283683230076F3D6 /* SwipeUpAction.swift */; };
+		E83B95912846514D00EFE394 /* TimerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83B95902846514D00EFE394 /* TimerProvider.swift */; };
 		E8B1F10B28450DCF003B4AE6 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8B1F10A28450DCF003B4AE6 /* right.mp3 */; };
 		E8B1F10C28450DCF003B4AE6 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8B1F10A28450DCF003B4AE6 /* right.mp3 */; };
 		E8B1F10D28450DCF003B4AE6 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8B1F10A28450DCF003B4AE6 /* right.mp3 */; };
@@ -103,6 +106,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		82645C0A284658BD00EA38EA /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		9165C252284651C3003EC392 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		DB44C4D0283E82720004AB7E /* ShakeCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeCoordinates.swift; sourceTree = "<group>"; };
 		DB44C4D2283E82860004AB7E /* ShakeDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDirection.swift; sourceTree = "<group>"; };
 		DB44C4D4283E82990004AB7E /* ShakeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeObserver.swift; sourceTree = "<group>"; };
@@ -153,6 +158,7 @@
 		E8196D8428366DF70076F3D6 /* ViewObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewObserver.swift; sourceTree = "<group>"; };
 		E8196D8628366F0F0076F3D6 /* DigitalCrownActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownActionModel.swift; sourceTree = "<group>"; };
 		E8196D88283683230076F3D6 /* SwipeUpAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeUpAction.swift; sourceTree = "<group>"; };
+		E83B95902846514D00EFE394 /* TimerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerProvider.swift; sourceTree = "<group>"; };
 		E8B1F10A28450DCF003B4AE6 /* right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = right.mp3; sourceTree = "<group>"; };
 		E8E366E1283E783D00F415A9 /* EndGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,7 +188,9 @@
 		DBFE2052284116D500C4A34A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9165C252284651C3003EC392 /* UserDefaultsManager.swift */,
 				DBFE2053284116F100C4A34A /* SoundManager.swift */,
+				E83B95902846514D00EFE394 /* TimerProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -297,6 +305,7 @@
 				E8E366E1283E783D00F415A9 /* EndGameView.swift */,
 				E80A1486283FB5B0009DE28B /* FeedbackActionView.swift */,
 				E80A148D28413662009DE28B /* StartGameView.swift */,
+				82645C0A284658BD00EA38EA /* ActionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -483,6 +492,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8196D61283669800076F3D6 /* NotificationController.swift in Sources */,
+				9165C253284651C3003EC392 /* UserDefaultsManager.swift in Sources */,
 				E80A1487283FB5B0009DE28B /* FeedbackActionView.swift in Sources */,
 				E8196D5F283669800076F3D6 /* ContentView.swift in Sources */,
 				DB44C4DF283E839B0004AB7E /* WatchUpAction.swift in Sources */,
@@ -492,6 +502,7 @@
 				DB56EBC0284007C2003C7AF4 /* SwipeRightAction.swift in Sources */,
 				DBD937EA283CFE1400AF00D9 /* TapActionModel.swift in Sources */,
 				DBFE2054284116F100C4A34A /* SoundManager.swift in Sources */,
+				E83B95912846514D00EFE394 /* TimerProvider.swift in Sources */,
 				E8196D8728366F0F0076F3D6 /* DigitalCrownActionModel.swift in Sources */,
 				DB44C4D9283E82D60004AB7E /* WatchDownAction.swift in Sources */,
 				E8196D65283669800076F3D6 /* ComplicationController.swift in Sources */,
@@ -509,6 +520,7 @@
 				DB44C4D7283E82C20004AB7E /* ShakeSensibility.swift in Sources */,
 				E8196D63283669800076F3D6 /* NotificationView.swift in Sources */,
 				DB6E725D283FBB5500A8FF7E /* CelebrateAction.swift in Sources */,
+				82645C0B284658BD00EA38EA /* ActionView.swift in Sources */,
 				DB44C4D3283E82860004AB7E /* ShakeDirection.swift in Sources */,
 				E8196D7F28366ACA0076F3D6 /* GameViewModel.swift in Sources */,
 				DB56EBBE2840074E003C7AF4 /* SwipeLeftAction.swift in Sources */,
@@ -650,7 +662,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"benben WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = FRMHAB2739;
+				DEVELOPMENT_TEAM = N5WF5ZGHK4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "benben WatchKit Extension/Info.plist";
@@ -682,7 +694,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"benben WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = FRMHAB2739;
+				DEVELOPMENT_TEAM = N5WF5ZGHK4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "benben WatchKit Extension/Info.plist";
@@ -715,7 +727,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FRMHAB2739;
+				DEVELOPMENT_TEAM = N5WF5ZGHK4;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = benben_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -739,7 +751,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FRMHAB2739;
+				DEVELOPMENT_TEAM = N5WF5ZGHK4;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = benben_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
