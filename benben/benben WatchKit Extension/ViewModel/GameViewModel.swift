@@ -22,6 +22,7 @@ class GameViewModel: ObservableObject {
     @Published var score: Int = 0
     private let userDefaults = UserDefaultsManager()
     private let soundEffectManager = SoundManager()
+    var intervalForNextAction = 1.0
     
     init() {
         for var action in actions {
@@ -60,9 +61,8 @@ extension GameViewModel: ActionDelegate {
         if (type == currentAction?.type) {
             print("Correct Action")
             score += 1
-            //soundEffectManager.playSound(sound: .right)
             state = .RIGHTACTION
-            Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+            Timer.scheduledTimer(withTimeInterval: intervalForNextAction, repeats: false) { _ in
                 self.state = .PLAYING
                 self.nextAction()
             }
@@ -72,8 +72,7 @@ extension GameViewModel: ActionDelegate {
             print("Wrong Action")
             self.stopGame()
             state = .WRONGACTION
-            //soundEffectManager.playSound(sound: .wrong)
-            Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+            Timer.scheduledTimer(withTimeInterval: intervalForNextAction, repeats: false) { _ in
                 self.state = .ENDED
             }
         }

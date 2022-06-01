@@ -25,7 +25,6 @@
 		DBECC165283FA8D700094487 /* ShakeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECC164283FA8D700094487 /* ShakeAction.swift */; };
 		DBFE2054284116F100C4A34A /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFE2053284116F100C4A34A /* SoundManager.swift */; };
 		DBFE205D2841173800C4A34A /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBFE20572841173800C4A34A /* wrong.mp3 */; };
-		E80A1487283FB5B0009DE28B /* FeedbackActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A1486283FB5B0009DE28B /* FeedbackActionView.swift */; };
 		E80A148E28413662009DE28B /* StartGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A148D28413662009DE28B /* StartGameView.swift */; };
 		E80A14B92847A9C8009DE28B /* watch_down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14AD2847A9C8009DE28B /* watch_down.mp3 */; };
 		E80A14BA2847A9C8009DE28B /* watch_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E80A14AE2847A9C8009DE28B /* watch_up.mp3 */; };
@@ -124,7 +123,6 @@
 		DBECC164283FA8D700094487 /* ShakeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeAction.swift; sourceTree = "<group>"; };
 		DBFE2053284116F100C4A34A /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		DBFE20572841173800C4A34A /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
-		E80A1486283FB5B0009DE28B /* FeedbackActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackActionView.swift; sourceTree = "<group>"; };
 		E80A148D28413662009DE28B /* StartGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameView.swift; sourceTree = "<group>"; };
 		E80A14AD2847A9C8009DE28B /* watch_down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = watch_down.mp3; sourceTree = "<group>"; };
 		E80A14AE2847A9C8009DE28B /* watch_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = watch_up.mp3; sourceTree = "<group>"; };
@@ -303,7 +301,6 @@
 				E8196D5E283669800076F3D6 /* ContentView.swift */,
 				E8196D7B28366A700076F3D6 /* GameView.swift */,
 				E8E366E1283E783D00F415A9 /* EndGameView.swift */,
-				E80A1486283FB5B0009DE28B /* FeedbackActionView.swift */,
 				E80A148D28413662009DE28B /* StartGameView.swift */,
 				82645C0A284658BD00EA38EA /* ActionView.swift */,
 			);
@@ -493,7 +490,6 @@
 			files = (
 				E8196D61283669800076F3D6 /* NotificationController.swift in Sources */,
 				9165C253284651C3003EC392 /* UserDefaultsManager.swift in Sources */,
-				E80A1487283FB5B0009DE28B /* FeedbackActionView.swift in Sources */,
 				E8196D5F283669800076F3D6 /* ContentView.swift in Sources */,
 				DB44C4DF283E839B0004AB7E /* WatchUpAction.swift in Sources */,
 				DB44C4D5283E82990004AB7E /* ShakeObserver.swift in Sources */,

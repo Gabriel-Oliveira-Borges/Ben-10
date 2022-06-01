@@ -21,9 +21,13 @@ struct ActionView: View {
                 .rotationEffect(.degrees(-90))
                 //.animation(.easeInOut(duration: 1.5), value: timeRemaining)
             if gameViewModel.state == .WRONGACTION {
-                FeedbackActionView(actionFeedback: .wrong)
+                Image(systemName: "xmark")
+                    .resizable()
+                    .frame(width: 80, height: 70)
             } else if gameViewModel.state == .RIGHTACTION {
-                FeedbackActionView(actionFeedback: .right)
+                Image(systemName: "checkmark")
+                    .resizable()
+                    .frame(width: 80, height: 70)
             } else {
                 VStack(spacing: 10) {
                     Text(actionText).onReceive(gameViewModel.$currentAction) { action in
