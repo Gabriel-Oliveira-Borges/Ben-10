@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9165C253284651C3003EC392 /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9165C252284651C3003EC392 /* ScoreModel.swift */; };
 		82645C0B284658BD00EA38EA /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82645C0A284658BD00EA38EA /* ActionView.swift */; };
+		9165C253284651C3003EC392 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9165C252284651C3003EC392 /* UserDefaultsManager.swift */; };
 		DB44C4D1283E82720004AB7E /* ShakeCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D0283E82720004AB7E /* ShakeCoordinates.swift */; };
 		DB44C4D3283E82860004AB7E /* ShakeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D2283E82860004AB7E /* ShakeDirection.swift */; };
 		DB44C4D5283E82990004AB7E /* ShakeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C4D4283E82990004AB7E /* ShakeObserver.swift */; };
@@ -92,8 +92,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9165C252284651C3003EC392 /* ScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
 		82645C0A284658BD00EA38EA /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		9165C252284651C3003EC392 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		DB44C4D0283E82720004AB7E /* ShakeCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeCoordinates.swift; sourceTree = "<group>"; };
 		DB44C4D2283E82860004AB7E /* ShakeDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDirection.swift; sourceTree = "<group>"; };
 		DB44C4D4283E82990004AB7E /* ShakeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeObserver.swift; sourceTree = "<group>"; };
@@ -160,6 +160,7 @@
 		DBFE2052284116D500C4A34A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9165C252284651C3003EC392 /* UserDefaultsManager.swift */,
 				DBFE2053284116F100C4A34A /* SoundManager.swift */,
 			);
 			path = Services;
@@ -261,7 +262,6 @@
 				DB56EBBD2840074E003C7AF4 /* SwipeLeftAction.swift */,
 				DB56EBBF284007C2003C7AF4 /* SwipeRightAction.swift */,
 				DBD937E9283CFE1400AF00D9 /* TapActionModel.swift */,
-				9165C252284651C3003EC392 /* ScoreModel.swift */,
 				DB44C4DC283E83850004AB7E /* PunchAction.swift */,
 				DB44C4D8283E82D60004AB7E /* WatchDownAction.swift */,
 				DB44C4DE283E839B0004AB7E /* WatchUpAction.swift */,
@@ -413,7 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8196D61283669800076F3D6 /* NotificationController.swift in Sources */,
-				9165C253284651C3003EC392 /* ScoreModel.swift in Sources */,
+				9165C253284651C3003EC392 /* UserDefaultsManager.swift in Sources */,
 				E80A1487283FB5B0009DE28B /* FeedbackActionView.swift in Sources */,
 				E8196D5F283669800076F3D6 /* ContentView.swift in Sources */,
 				DB44C4DF283E839B0004AB7E /* WatchUpAction.swift in Sources */,
