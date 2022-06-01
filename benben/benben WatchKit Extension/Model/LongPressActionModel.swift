@@ -14,7 +14,7 @@ class LongPressAction: ActionModel, ViewObserverDelegate {
     
     var delegate: ActionDelegate?
     
-    var text: String = "Press and hold"
+    var text: String = "Press and hold!"
     
     init() {
         viewObserver.addDelegate(self)

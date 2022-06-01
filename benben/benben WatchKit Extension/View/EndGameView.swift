@@ -16,10 +16,10 @@ struct EndGameView: View {
         VStack {
             Spacer()
             Text(endGameTitle)
-                .font(.system(size: 24))
+                .font(.system(size: 24, weight: .semibold))
             Spacer()
             Text("\(finalScore)")
-                .font(.system(size: 30))
+                .font(.system(size: 30, weight: .semibold))
             Spacer()
             HStack {
                 Button(action: {

@@ -14,10 +14,10 @@ struct StartGameView: View {
     var body: some View {
         VStack {
             Text("High score:")
-                .font(.system(size: 24))
+                .font(.system(size: 24, weight: .semibold))
             Spacer()
             Text("\(highScore)")
-                .font(.system(size: 30))
+                .font(.system(size: 30, weight: .semibold))
             Spacer()
             Button {
                 gameViewModel.state = .PLAYING

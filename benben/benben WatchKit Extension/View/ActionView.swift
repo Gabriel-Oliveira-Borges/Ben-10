@@ -24,7 +24,9 @@ struct ActionView: View {
                 Text(actionText).onReceive(gameViewModel.$currentAction) { action in
                     actionText = action!.text
                 }
+                .font(.system(size: 24, weight: .semibold))
                 Text("\(gameViewModel.score)")
+                .font(.system(size: 19, weight: .light))
             }
         }
     }
