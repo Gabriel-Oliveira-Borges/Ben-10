@@ -60,7 +60,7 @@ extension GameViewModel: ActionDelegate {
         if (type == currentAction?.type) {
             print("Correct Action")
             score += 1
-            soundEffectManager.playSound(sound: .right)
+            //soundEffectManager.playSound(sound: .right)
             state = .RIGHTACTION
             Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
                 self.state = .PLAYING
@@ -72,7 +72,7 @@ extension GameViewModel: ActionDelegate {
             print("Wrong Action")
             self.stopGame()
             state = .WRONGACTION
-            soundEffectManager.playSound(sound: .wrong)
+            //soundEffectManager.playSound(sound: .wrong)
             Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
                 self.state = .ENDED
             }

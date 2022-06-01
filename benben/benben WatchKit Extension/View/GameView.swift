@@ -17,9 +17,11 @@ struct GameView: View {
         case .PLAYING:
             ActionView(gameViewModel: gameViewModel)
         case .RIGHTACTION:
-            FeedbackActionView(actionFeedback: .right)
+            ActionView(gameViewModel: gameViewModel)
+            //FeedbackActionView(actionFeedback: .right)
         case .WRONGACTION:
-            FeedbackActionView(actionFeedback: .wrong)
+            ActionView(gameViewModel: gameViewModel)
+            //FeedbackActionView(actionFeedback: .wrong)
         case .ENDED:
             EndGameView(gameViewModel: gameViewModel)
         }

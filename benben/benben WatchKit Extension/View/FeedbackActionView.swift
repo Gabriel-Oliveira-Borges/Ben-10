@@ -18,7 +18,7 @@ struct FeedbackActionView: View {
             ZStack{
                 if actionFeedback == .wrong {
                     Circle()
-                        .strokeBorder(Color("Red"), lineWidth: 6)
+                        .strokeBorder(Color("Red"), lineWidth: 0)
                         .frame(width: geometry.size.width, height: geometry.size.height)
                         
                     Image(systemName: "xmark")
@@ -26,7 +26,7 @@ struct FeedbackActionView: View {
                         .frame(width: 80, height: 70)
                 } else {
                     Circle()
-                        .strokeBorder(Color("Blue"), lineWidth: 6)
+                        .strokeBorder(Color("Blue"), lineWidth: 0)
                         .frame(width: geometry.size.width, height: geometry.size.height)
                         
                     Image(systemName: "checkmark")
