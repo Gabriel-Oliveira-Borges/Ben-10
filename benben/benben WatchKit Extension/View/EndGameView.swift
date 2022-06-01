@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct EndGameView: View {
-    var endGameTitle: String
     var gameViewModel: GameViewModel
+    private var endGameTitle: String
     private let shownScore: Int
     private let userDefaults = UserDefaultsManager()
     
