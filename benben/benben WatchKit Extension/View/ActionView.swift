@@ -16,13 +16,13 @@ struct ActionView: View {
     var body: some View {
         ZStack{
             Circle()
-                .stroke(Color.gray.opacity(0.2), style: StrokeStyle(lineWidth: 15, lineCap: .round))
+                .stroke(Color.gray.opacity(0.2), style: StrokeStyle(lineWidth: 6, lineCap: .round))
             Circle()
                 .trim(from: 0, to: CGFloat(gameViewModel.remainingTimeFraction))
-                .stroke(Color.red, style: StrokeStyle(lineWidth: 15, lineCap: .round))
+                .stroke(Color.red, style: StrokeStyle(lineWidth: 6, lineCap: .round))
                 .rotationEffect(.degrees(-90))
                 .onReceive(gameViewModel.getTimerPublisher()) { _ in
-                    withAnimation {
+                    withAnimation(.easeInOut(duration: 1.5)) {
                         gameViewModel.updateRemainingTime()
                     }
                 }
@@ -30,7 +30,7 @@ struct ActionView: View {
                 Text(actionText).onReceive(gameViewModel.$currentAction) { action in
                     actionText = action!.text
                 }
-                .font(.system(size: 24, weight: .semibold))
+                .font(.system(size: 20, weight: .semibold))
                 Text("\(gameViewModel.score)")
                 .font(.system(size: 19, weight: .light))
             }
@@ -38,6 +38,7 @@ struct ActionView: View {
         .onAppear {
             soundEffectManager.playSound(sound: gameViewModel.currentAction!.type)
         }
+        .offset(x: 0, y: 10)
     }
     
 
