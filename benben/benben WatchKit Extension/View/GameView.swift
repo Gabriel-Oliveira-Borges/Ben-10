@@ -13,7 +13,7 @@ struct GameView: View {
     var body: some View {
         switch gameViewModel.state {
         case .HOME:
-            StartGameView(highScore: 30, gameViewModel: gameViewModel)
+            StartGameView(gameViewModel: gameViewModel)
         case .PLAYING:
             ActionView(gameViewModel: gameViewModel)
         case .RIGHTACTION:
@@ -21,7 +21,7 @@ struct GameView: View {
         case .WRONGACTION:
             FeedbackActionView(actionFeedback: .wrong)
         case .ENDED:
-            EndGameView(endGameTitle: "Final score:", finalScore: 20, gameViewModel: gameViewModel)
+            EndGameView(gameViewModel: gameViewModel)
         }
     }
 }
