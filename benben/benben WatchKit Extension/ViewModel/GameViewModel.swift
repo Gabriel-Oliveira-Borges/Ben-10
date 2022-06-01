@@ -16,10 +16,15 @@ enum GameState {
 }
 
 class GameViewModel: ObservableObject {
-    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), PunchAction(), WatchDownAction(), WatchUpAction(), ShakeAction(), CelebrateAction(), LongPressAction()]
-    @Published var currentAction: ActionModel?
+
     @Published var state: GameState = .HOME
+    @Published var currentAction: ActionModel?
+    @Published var remainingTimeFraction: Float = 1
+    
     private let soundEffectManager = SoundManager()
+    private let timer = TimerProvider(totalTime: 5)
+    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), PunchAction(), WatchDownAction(), WatchUpAction(), ShakeAction(), CelebrateAction(), LongPressAction()]
+    
     
     init() {
         for var action in actions {
@@ -30,6 +35,17 @@ class GameViewModel: ObservableObject {
     func startGame() {
         nextAction()
         state = .PLAYING
+        timer.start()
+    }
+    
+    func getTimerPublisher() -> Timer.TimerPublisher {
+        return timer.publisher
+    }
+    
+    func updateRemainingTime() {
+        timer.uptadeRemainingTime()
+        remainingTimeFraction = 1 - (((Float(timer.totalTime)  - Float(timer.remainingTime!))/Float(timer.totalTime)))
+
     }
     
     private func stopGame() {
