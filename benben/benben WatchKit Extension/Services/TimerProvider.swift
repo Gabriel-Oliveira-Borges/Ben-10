@@ -47,7 +47,7 @@ class TimerProvider: ObservableObject {
         guard var remainingTime = remainingTime else { return }
 
         if remainingTime < 1 {
-            self.reestart()
+            self.restart()
         } else {
             remainingTime = remainingTime - 1
         }
