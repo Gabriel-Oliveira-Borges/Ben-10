@@ -26,7 +26,6 @@ struct StartGameView: View {
                 .font(.system(size: 30, weight: .semibold))
             Spacer()
             Button {
-                gameViewModel.state = .PLAYING
                 gameViewModel.startGame()
             } label: {
                 Text("Start game!")

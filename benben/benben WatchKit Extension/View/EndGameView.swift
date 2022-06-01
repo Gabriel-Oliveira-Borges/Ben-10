@@ -20,7 +20,7 @@ struct EndGameView: View {
         let currentScore = gameViewModel.score
         self.shownScore = currentScore
         if (highScore == currentScore) {
-            self.endGameTitle = "New high score:"
+            self.endGameTitle = "New high score!"
         } else {
             self.endGameTitle = "Final score:"
         }
