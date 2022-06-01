@@ -9,7 +9,7 @@ import Foundation
 
 class ShakeAction: ShakeActionModel {
     var type: ActionType = .SHAKE
-    var text: String = "Shake"
+    var text: String = "Shake!"
     
     var delegate: ActionDelegate?
     var shakeObserver = ShakeObserver(sensibility: .shakeSensibilityNormal)

@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct StartGameView: View {
-    var highScore = 10
+    @State var highScore: Int
     var gameViewModel: GameViewModel
+    private let userDefaults = UserDefaultsManager()
+    
+    init(gameViewModel: GameViewModel) {
+        self.gameViewModel = gameViewModel
+        self.highScore = userDefaults.getMaxScore()
+    }
     
     var body: some View {
         VStack {
@@ -20,7 +26,6 @@ struct StartGameView: View {
                 .font(.system(size: 30, weight: .semibold))
             Spacer()
             Button {
-                gameViewModel.state = .PLAYING
                 gameViewModel.startGame()
             } label: {
                 Text("Start game!")

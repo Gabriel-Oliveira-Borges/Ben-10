@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct EndGameView: View {
-    var endGameTitle = "Final score:"
-    var finalScore = 18
     var gameViewModel: GameViewModel
+    private var endGameTitle: String
+    private let shownScore: Int
+    private let userDefaults = UserDefaultsManager()
+    
+    init(gameViewModel: GameViewModel) {
+        self.gameViewModel = gameViewModel
+        
+        let highScore = userDefaults.getMaxScore()
+        let currentScore = gameViewModel.score
+        self.shownScore = currentScore
+        if (highScore == currentScore) {
+            self.endGameTitle = "New high score!"
+        } else {
+            self.endGameTitle = "Final score:"
+        }
+    }
     
     var body: some View {
         VStack {
@@ -18,7 +32,7 @@ struct EndGameView: View {
             Text(endGameTitle)
                 .font(.system(size: 24, weight: .semibold))
             Spacer()
-            Text("\(finalScore)")
+            Text("\(shownScore)")
                 .font(.system(size: 30, weight: .semibold))
             Spacer()
             HStack {
