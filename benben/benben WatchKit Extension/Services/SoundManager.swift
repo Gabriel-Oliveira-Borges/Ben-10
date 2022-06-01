@@ -27,7 +27,7 @@ class SoundManager {
         playSound(sound: sound.rawValue)
     }
     
-    private func playSound(sound: String) {
+    func playSound(sound: String) {
         guard let url = Bundle.main.url(forResource: sound, withExtension: ".mp3") else { return }
         do {
             player = try AVAudioPlayer(contentsOf: url)
