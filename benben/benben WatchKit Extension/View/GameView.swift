@@ -10,14 +10,18 @@ import SwiftUI
 struct GameView: View {
     @ObservedObject var gameViewModel: GameViewModel = GameViewModel()
     
-    init() {
-        gameViewModel.startGame()
-    }
-    
     var body: some View {
-        VStack{
-            Text(gameViewModel.currentAction.text)
-            Text("\(gameViewModel.getScoreGame()))
+        switch gameViewModel.state {
+        case .HOME:
+            StartGameView(highScore: 30, gameViewModel: gameViewModel)
+        case .PLAYING:
+            ActionView(gameViewModel: gameViewModel)
+        case .RIGHTACTION:
+            FeedbackActionView(actionFeedback: .right)
+        case .WRONGACTION:
+            FeedbackActionView(actionFeedback: .wrong)
+        case .ENDED:
+            EndGameView(endGameTitle: "Final score:", finalScore: 20, gameViewModel: gameViewModel)
         }
     }
 }
