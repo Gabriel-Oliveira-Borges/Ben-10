@@ -34,6 +34,7 @@ class GameViewModel: ObservableObject {
         score = 0
         nextAction()
         state = .PLAYING
+        timer.delegate = self
         timer.start()
     }
     
@@ -45,6 +46,16 @@ class GameViewModel: ObservableObject {
         timer.uptadeRemainingTime()
         remainingTimeFraction = 1 - (((Float(timer.totalTime)  - Float(timer.remainingTime!))/Float(timer.totalTime)))
 
+    }
+    
+    private func endGame() {
+        userDefaults.setMaxScoreIfNeeded(score)
+        self.stopGame()
+        state = .WRONGACTION
+        soundEffectManager.playSound(sound: .wrong)
+        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+            self.state = .ENDED
+        }
     }
     
     private func stopGame() {
@@ -87,5 +98,11 @@ extension GameViewModel: ActionDelegate {
                 self.state = .ENDED
             }
         }
+    }
+}
+
+extension GameViewModel: TimerProviderDelegate {
+    func timerDidEnd() {
+        self.endGame()
     }
 }

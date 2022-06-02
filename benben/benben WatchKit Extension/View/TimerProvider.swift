@@ -15,6 +15,7 @@ class TimerProvider: ObservableObject {
     
     private var subscription: Cancellable? = nil
     
+    public weak var delegate: TimerProviderDelegate?
     public let totalTime: Int
     public var publisher = Timer.TimerPublisher(interval: 1.0, runLoop: .main, mode: .common)
     
@@ -44,11 +45,17 @@ class TimerProvider: ObservableObject {
     }
     
     func uptadeRemainingTime() {
-        if remainingTime! < 1 {
-            self.restart()
+        if remainingTime! == 0 {
+            self.cancel()
+            delegate?.timerDidEnd()
         } else {
             remainingTime = remainingTime! - 1
         }
     }
+}
+
+protocol TimerProviderDelegate: AnyObject {
+    
+    func timerDidEnd()
     
 }
