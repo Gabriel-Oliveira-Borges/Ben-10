@@ -658,7 +658,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"benben WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "benben WatchKit Extension/Info.plist";
@@ -690,7 +690,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"benben WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "benben WatchKit Extension/Info.plist";
@@ -723,7 +723,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = benben_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -747,7 +747,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5WF5ZGHK4;
+				DEVELOPMENT_TEAM = FRMHAB2739;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = benben_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
