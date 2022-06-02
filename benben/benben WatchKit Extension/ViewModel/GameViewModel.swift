@@ -25,7 +25,7 @@ class GameViewModel: ObservableObject {
     private let userDefaults = UserDefaultsManager()
     private let soundEffectManager = SoundManager()
     private let timer = TimerProvider(totalTime: 5)
-    private var actions: [ActionModel] = [/*DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), PunchAction(), WatchDownAction(), WatchUpAction(), ShakeAction(), CelebrateAction(), */LongPressAction()]
+    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), PunchAction(), WatchDownAction(), WatchUpAction(), ShakeAction(), CelebrateAction(), LongPressAction()]
         
     func startGame() {
         for var action in actions {
@@ -74,7 +74,8 @@ class GameViewModel: ObservableObject {
         for var action in actions {
             action.delegate = nil
         }
-        self.timer.reset()
+        self.timer.cancel()
+        self.remainingTimeFraction = 1
     }
     
     private func nextAction() {

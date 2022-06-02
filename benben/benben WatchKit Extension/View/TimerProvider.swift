@@ -8,9 +8,9 @@
 import Foundation
 import Combine
 
-class TimerProvider: ObservableObject {
+class TimerProvider {
     
-    @Published var remainingTime: Int?
+    public var remainingTime: Int?
     
     private var subscription: Cancellable? = nil
     
@@ -29,19 +29,18 @@ class TimerProvider: ObservableObject {
     
     func reset() {
         self.cancel()
-        remainingTime = self.totalTime
-        publisher = Timer.TimerPublisher(interval: 1.0, runLoop: .main, mode: .common)
         delegate?.timerDidReset()
     }
     
     func cancel() {
         subscription?.cancel()
         subscription = nil
+        remainingTime = self.totalTime
+        publisher = Timer.TimerPublisher(interval: 1.0, runLoop: .main, mode: .common)
     }
     
     func uptadeRemainingTime() {
         if remainingTime! == 0 {
-            self.cancel()
             delegate?.timerDidEnd()
         } else {
             remainingTime = remainingTime! - 1
