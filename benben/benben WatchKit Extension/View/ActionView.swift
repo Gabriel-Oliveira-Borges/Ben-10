@@ -21,26 +21,46 @@ struct ActionView: View {
                 .trim(from: 0, to: CGFloat(gameViewModel.remainingTimeFraction))
                 .stroke(Color.red, style: StrokeStyle(lineWidth: 6, lineCap: .round))
                 .rotationEffect(.degrees(-90))
+                //.animation(.easeInOut(duration: 1.5), value: timeRemaining)
                 .onReceive(gameViewModel.getTimerPublisher()) { _ in
                     withAnimation(.easeInOut(duration: 1.5)) {
                         gameViewModel.updateRemainingTime()
                     }
                 }
-            VStack(spacing: 10) {
-                Text(actionText).onReceive(gameViewModel.$currentAction) { action in
-                    actionText = action!.text
+            if gameViewModel.state == .WRONGACTION {
+                Image(systemName: "xmark")
+                    .resizable()
+                    .frame(width: 80, height: 70)
+            } else if gameViewModel.state == .RIGHTACTION {
+                Image(systemName: "checkmark")
+                    .resizable()
+                    .frame(width: 80, height: 70)
+            } else {
+                VStack(spacing: 10) {
+                    Text(actionText).onReceive(gameViewModel.$currentAction) { action in
+                        actionText = action!.text
+                    }
+                    .font(.system(size: 24, weight: .semibold))
+                    Text("\(gameViewModel.score)")
+                    .font(.system(size: 19, weight: .light))
                 }
-                .font(.system(size: 20, weight: .semibold))
-                Text("\(gameViewModel.score)")
-                .font(.system(size: 19, weight: .light))
             }
         }
         .onAppear {
-            soundEffectManager.playSound(sound: gameViewModel.currentAction!.type)
+            if gameViewModel.state == .WRONGACTION {
+                soundEffectManager.playSound(sound: .wrong)
+            } else if gameViewModel.state == .RIGHTACTION {
+                soundEffectManager.playSound(sound: .right)
+            } else {
+                soundEffectManager.playSound(sound: gameViewModel.currentAction!.type)
+            }
+            
         }
         .offset(x: 0, y: 10)
+                
+        
     }
-    
+        
 
 }
 

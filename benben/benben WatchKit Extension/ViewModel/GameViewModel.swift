@@ -24,6 +24,8 @@ class GameViewModel: ObservableObject {
 
     private let userDefaults = UserDefaultsManager()
     private let soundEffectManager = SoundManager()
+    var intervalForNextAction = 1.0
+    
     private let timer = TimerProvider(totalTime: 5)
     private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), PunchAction(), WatchDownAction(), WatchUpAction(), ShakeAction(), CelebrateAction(), LongPressAction()]
         
