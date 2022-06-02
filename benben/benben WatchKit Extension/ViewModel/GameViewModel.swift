@@ -27,7 +27,7 @@ class GameViewModel: ObservableObject {
     var intervalForNextAction = 1.0
     
     private let timer = TimerProvider(totalTime: 5)
-    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), PunchAction(), WatchDownAction(), WatchUpAction(), ShakeAction(), CelebrateAction(), LongPressAction()]
+    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(),    LongPressAction()]
         
     func startGame() {
         for var action in actions {
@@ -52,13 +52,13 @@ class GameViewModel: ObservableObject {
     
     func reestartTimerWithNewAction() {
         score += 1
+        self.timer.reset()
         soundEffectManager.playSound(sound: .right)
         state = .RIGHTACTION
         Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
-            self.timer.reset()
+            self.timer.start()
             self.state = .PLAYING
             self.nextAction()
-            self.timer.start()
         }
     }
     
@@ -83,6 +83,7 @@ class GameViewModel: ObservableObject {
     private func nextAction() {
         (currentAction as? ShakeActionModel)?.stopDetection()
         currentAction = actions.randomElement()!
+        soundEffectManager.playSound(sound: currentAction!.type)
         (currentAction as? ShakeActionModel)?.startDetection()
     }
 }
