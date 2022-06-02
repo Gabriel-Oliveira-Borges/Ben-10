@@ -48,6 +48,18 @@ class GameViewModel: ObservableObject {
 
     }
     
+    func reestartTimerWithNewAction() {
+        score += 1
+        soundEffectManager.playSound(sound: .right)
+        state = .RIGHTACTION
+        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+            self.timer.reset()
+            self.state = .PLAYING
+            self.nextAction()
+            self.timer.start()
+        }
+    }
+    
     private func endGame() {
         userDefaults.setMaxScoreIfNeeded(score)
         self.stopGame()
@@ -73,22 +85,10 @@ class GameViewModel: ObservableObject {
 }
 
 extension GameViewModel: ActionDelegate {
+    
     internal func onDetected(type: ActionType) {
-        print("")
-        print("")
-        print("#################################")
-        print("Detected: \(type)")
-        print("Expected: \(currentAction!.type)")
         if (type == currentAction?.type) {
-            print("Correct Action")
-            score += 1
-            soundEffectManager.playSound(sound: .right)
-            state = .RIGHTACTION
-            Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
-                self.state = .PLAYING
-                self.nextAction()
-            }
-            
+            self.reestartTimerWithNewAction()
         } else {
             self.endGame()
         }
@@ -98,5 +98,9 @@ extension GameViewModel: ActionDelegate {
 extension GameViewModel: TimerProviderDelegate {
     func timerDidEnd() {
         self.endGame()
+    }
+    
+    func timerDidReset() {
+        self.remainingTimeFraction = 1
     }
 }

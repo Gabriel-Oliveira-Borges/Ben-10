@@ -11,7 +11,6 @@ import Combine
 class TimerProvider: ObservableObject {
     
     @Published var remainingTime: Int?
-    @Published var isRunning: Bool = false
     
     private var subscription: Cancellable? = nil
     
@@ -26,19 +25,18 @@ class TimerProvider: ObservableObject {
     
     func start() {
         subscription = publisher.connect()
-        self.isRunning = true
     }
     
     func reset() {
         self.cancel()
         remainingTime = self.totalTime
         publisher = Timer.TimerPublisher(interval: 1.0, runLoop: .main, mode: .common)
+        delegate?.timerDidReset()
     }
     
     func cancel() {
         subscription?.cancel()
         subscription = nil
-        isRunning = false
     }
     
     func uptadeRemainingTime() {
@@ -52,7 +50,6 @@ class TimerProvider: ObservableObject {
 }
 
 protocol TimerProviderDelegate: AnyObject {
-    
     func timerDidEnd()
-    
+    func timerDidReset()
 }
