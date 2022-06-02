@@ -29,18 +29,15 @@ class TimerProvider: ObservableObject {
         self.isRunning = true
     }
     
-    func restart() {
-        guard var remainingTime = remainingTime else { return }
-
+    func reset() {
         self.cancel()
         remainingTime = self.totalTime
-        self.start()
+        publisher = Timer.TimerPublisher(interval: 1.0, runLoop: .main, mode: .common)
     }
     
     func cancel() {
-        guard let subscription = subscription else { return }
-        
-        subscription.cancel()
+        subscription?.cancel()
+        subscription = nil
         isRunning = false
     }
     

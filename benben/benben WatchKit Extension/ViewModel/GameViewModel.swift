@@ -25,7 +25,7 @@ class GameViewModel: ObservableObject {
     private let userDefaults = UserDefaultsManager()
     private let soundEffectManager = SoundManager()
     private let timer = TimerProvider(totalTime: 5)
-    private var actions: [ActionModel] = [DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), PunchAction(), WatchDownAction(), WatchUpAction(), ShakeAction(), CelebrateAction(), LongPressAction()]
+    private var actions: [ActionModel] = [/*DigitalCrownActionModel(), SwipeUpAction(), SwipeDownAction(), SwipeLeftAction(), SwipeRightAction(), TapAction(), PunchAction(), WatchDownAction(), WatchUpAction(), ShakeAction(), CelebrateAction(), */LongPressAction()]
         
     func startGame() {
         for var action in actions {
@@ -62,6 +62,7 @@ class GameViewModel: ObservableObject {
         for var action in actions {
             action.delegate = nil
         }
+        self.timer.reset()
     }
     
     private func nextAction() {
@@ -89,14 +90,7 @@ extension GameViewModel: ActionDelegate {
             }
             
         } else {
-            userDefaults.setMaxScoreIfNeeded(score)
-            print("Wrong Action")
-            self.stopGame()
-            state = .WRONGACTION
-            soundEffectManager.playSound(sound: .wrong)
-            Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
-                self.state = .ENDED
-            }
+            self.endGame()
         }
     }
 }
