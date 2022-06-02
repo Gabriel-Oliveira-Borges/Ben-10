@@ -8,13 +8,13 @@
 import Foundation
 import Combine
 
-class TimerProvider: ObservableObject {
+class TimerProvider {
     
-    @Published var remainingTime: Int?
-    @Published var isRunning: Bool = false
+    public var remainingTime: Int?
     
     private var subscription: Cancellable? = nil
     
+    public weak var delegate: TimerProviderDelegate?
     public let totalTime: Int
     public var publisher = Timer.TimerPublisher(interval: 1.0, runLoop: .main, mode: .common)
     
@@ -25,30 +25,30 @@ class TimerProvider: ObservableObject {
     
     func start() {
         subscription = publisher.connect()
-        self.isRunning = true
     }
     
-    func restart() {
-        guard var remainingTime = remainingTime else { return }
-
+    func reset() {
         self.cancel()
-        remainingTime = self.totalTime
-        self.start()
+        delegate?.timerDidReset()
     }
     
     func cancel() {
-        guard let subscription = subscription else { return }
-        
-        subscription.cancel()
-        isRunning = false
+        subscription?.cancel()
+        subscription = nil
+        remainingTime = self.totalTime
+        publisher = Timer.TimerPublisher(interval: 1.0, runLoop: .main, mode: .common)
     }
     
     func uptadeRemainingTime() {
-        if remainingTime! < 1 {
-            self.restart()
+        if remainingTime! == 0 {
+            delegate?.timerDidEnd()
         } else {
             remainingTime = remainingTime! - 1
         }
     }
-    
+}
+
+protocol TimerProviderDelegate: AnyObject {
+    func timerDidEnd()
+    func timerDidReset()
 }

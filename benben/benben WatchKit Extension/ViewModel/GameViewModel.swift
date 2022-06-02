@@ -36,6 +36,7 @@ class GameViewModel: ObservableObject {
         score = 0
         nextAction()
         state = .PLAYING
+        timer.delegate = self
         timer.start()
     }
     
@@ -49,10 +50,34 @@ class GameViewModel: ObservableObject {
 
     }
     
+    func reestartTimerWithNewAction() {
+        score += 1
+        soundEffectManager.playSound(sound: .right)
+        state = .RIGHTACTION
+        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+            self.timer.reset()
+            self.state = .PLAYING
+            self.nextAction()
+            self.timer.start()
+        }
+    }
+    
+    private func endGame() {
+        userDefaults.setMaxScoreIfNeeded(score)
+        self.stopGame()
+        state = .WRONGACTION
+        soundEffectManager.playSound(sound: .wrong)
+        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+            self.state = .ENDED
+        }
+    }
+    
     private func stopGame() {
         for var action in actions {
             action.delegate = nil
         }
+        self.timer.cancel()
+        self.remainingTimeFraction = 1
     }
     
     private func nextAction() {
@@ -63,29 +88,22 @@ class GameViewModel: ObservableObject {
 }
 
 extension GameViewModel: ActionDelegate {
+    
     internal func onDetected(type: ActionType) {
-        print("")
-        print("")
-        print("#################################")
-        print("Detected: \(type)")
-        print("Expected: \(currentAction!.type)")
         if (type == currentAction?.type) {
-            print("Correct Action")
-            score += 1
-            state = .RIGHTACTION
-            Timer.scheduledTimer(withTimeInterval: intervalForNextAction, repeats: false) { _ in
-                self.state = .PLAYING
-                self.nextAction()
-            }
-            
+            self.reestartTimerWithNewAction()
         } else {
-            userDefaults.setMaxScoreIfNeeded(score)
-            print("Wrong Action")
-            self.stopGame()
-            state = .WRONGACTION
-            Timer.scheduledTimer(withTimeInterval: intervalForNextAction, repeats: false) { _ in
-                self.state = .ENDED
-            }
+            self.endGame()
         }
+    }
+}
+
+extension GameViewModel: TimerProviderDelegate {
+    func timerDidEnd() {
+        self.endGame()
+    }
+    
+    func timerDidReset() {
+        self.remainingTimeFraction = 1
     }
 }
